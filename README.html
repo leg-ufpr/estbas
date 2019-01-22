@@ -485,29 +485,33 @@ div.tocify {
 </div>
 
 
-<div id="ce001" class="section level1">
-<h1>CE001</h1>
-<p><a href="https://travis-ci.org/leg-ufpr/ce001"><img src="https://travis-ci.org/leg-ufpr/ce001.svg?branch=master" alt="Build Status" /></a></p>
-<div id="ce001---bioestatistica" class="section level2">
-<h2>CE001 - Bioestatística</h2>
-<p>Repositório da disciplina CE001 - Bioestatística, ministrada na UFPR, para diversos cursos de graduação.</p>
-<p>Este repositório contém todo o material de aula e os arquivos necessários para gerar a página da disciplina, disponível em: <a href="http://cursos.leg.ufpr.br/ce001" class="uri">http://cursos.leg.ufpr.br/ce001</a></p>
+<div id="estbas" class="section level1">
+<h1>estbas</h1>
+<p><a href="https://travis-ci.org/leg-ufpr/estbas"><img src="https://travis-ci.org/leg-ufpr/estbas.svg?branch=master" alt="Build Status" /></a></p>
+<div id="estatistica-basica" class="section level2">
+<h2>Estatística Básica</h2>
+<p>Repositório das disciplinas de Estatística Básica (CE00X), ministradas na UFPR, para diversos cursos de graduação.</p>
+<p>Este repositório contém todo o material de aula e os arquivos necessários para gerar a página da disciplina, disponível em: <a href="http://cursos.leg.ufpr.br/estbas" class="uri">http://cursos.leg.ufpr.br/estbas</a></p>
 <div id="para-gerar-o-site" class="section level3">
 <h3>Para gerar o site</h3>
 <p>O site é todo construído usando apenas o <a href="http://rmarkdown.rstudio.com">R Markdown</a>, por isso, o código fonte está nos arquivos <code>Rmd</code>. Para gerar o site você precisará das versões mais recentes dos pacotes <code>rmarkdown</code> e <code>knitr</code>.</p>
 <ol style="list-style-type: decimal">
 <li>Copie (clone ou fork) esse repositório</li>
-<li>Apague o diretório <code>docs/</code></li>
 <li>Abra o R na raíz, carregue os pacotes e renderize o site com <code>render_site()</code></li>
 </ol>
 <pre class="r"><code>library(rmarkdown)
 render_site()</code></pre>
+<p><strong>Observações</strong>:</p>
+<ul>
+<li>Os slides são gerados individualmente, a partir dos arquivos fonte <code>Rmd</code>, disponíveis no diretório <a href="./slides">slides</a>.</li>
+<li>A publicação no site é automatizada através do <a href="https://travis-ci.org">Travis</a>. Os arquivos para essa automatização são <a href="./.travis.yml">.travis.yml</a> (configura o build como se fosse um pacote do R), <a href="./_build.sh">_build.sh</a> (roda o <strong>rmarkdown</strong>) na raíz do site, e <a href="./_deploy.sh">_deploy.sh</a> (clona e gera o site diretamente no branch <em>gh-pages</em>).</li>
+</ul>
 </div>
 <div id="licenca" class="section level3">
 <h3>Licença</h3>
 <p>O conteúdo deste repositório, das páginas, e do material da disciplina está está disponível por meio da <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR">Licença Creative Commons 4.0</a> (Atribuição/NãoComercial/PartilhaIgual).</p>
 <div class="figure">
-<img src="img/CC_by-nc-sa_88x31.png" alt="Licença Creative Commons 4.0" />
+<img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Licença Creative Commons 4.0" />
 <p class="caption">Licença Creative Commons 4.0</p>
 </div>
 </div>
