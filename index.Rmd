@@ -18,15 +18,15 @@ source("setup_knitr.R")
 
 Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 
-- CE001 - Bioestatística
+- **CE001 - Bioestatística**
   - Ciências Biológicas (MB)
-- CE003 - Estatística II
+- **CE003 - Estatística II**
   - Engenharia Industrial Madeireira (MD)
   - Engenharia Madeireira (N)
-- CE009 - Introdução à Estatística
+- **CE009 - Introdução à Estatística**
   - Engenharia Ambiental (AMB)
   - Agronomia (A)
-- CE020 - Bioestatística
+- **CE020 - Bioestatística**
   - Enfermagem (E)
 
 # Detalhes da oferta da disciplina
