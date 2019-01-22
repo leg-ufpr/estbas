@@ -1,0 +1,53 @@
+---
+title: "Recursos computacionais"
+output:
+  html_document:
+    toc: false
+---
+
+O curso não prevê conteúdo computacional. Entretanto todo o conteúdo
+abordado pode ser tratado computacionalmente por planilhas eletrônicas
+(como por exemplo o LibreOffice), linguagens ou programas estatísticos.
+
+Em particular, todo o conteúdo deste curso é confeccionado utilizando-se
+o *software* [R](http://www.r-project.org), uma linguagem de programação
+para estatística, que é livre e de código aberto. Em alguns materias
+disponibilizados pelos professores você poderá encontrar códigos
+referentes à essa linguagem.
+
+O uso de programas computacionais pode auxiliar o entendimento do
+conteúdo do curso, e os códigos em R servem como ilustração para os
+alunos interessados, mas não será parte da avaliação.
+
+## Programa para estatística
+
+- [The R project for Statistical Computing](http://www.r-project.org):
+  página do programa **R**
+  - [Curso sobre o uso do
+  R](http://leg.ufpr.br/doku.php/sofware:material-r) no LEG
+  - Página da disciplina [Estatística Computacional
+  I](http://leg.ufpr.br/~fernandomayer/aulas/ce083/), ministrada
+  para o curso de Estatística
+  - [R-rautu](http://git.leg.ufpr.br/fernandomayer/R-rautu) uma
+  introdução ao uso do R
+  - [RStudio](http://www.rstudio.org) um ambiente para facilitar
+  uso do R
+  - [R-br](https://listas.inf.ufpr.br/cgi-bin/mailman/listinfo/r-br)
+  é a lista de discussão em português sobre o uso do R
+
+## Programas para matemática simbólica
+
+- [Wolfram alpha](http://www.wolframalpha.com)
+- [Maxima](http://maxima.sourceforge.net) (e interface
+  [wxmaxima](http://andrejv.github.com/wxmaxima/))
+- [Yacas](http://yacas.sourceforge.net)
+
+## Outros recursos
+
+- [LibreOffice](https://pt-br.libreoffice.org) suíte de programas
+  semelhante ao MS-Office (editor de texto, banco de dados, apresentação
+  e planilha) gratuito
+- [Google sheets](https://www.google.com/sheets/about). Para instalar o
+  *add-on* de estatística:
+        - Add-Ons -> Get Add-Ons -> Procure por "Statistics" -> Procure
+          o add-on de "Google Statisticians and Engineers"

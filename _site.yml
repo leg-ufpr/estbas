@@ -1,0 +1,57 @@
+name: "ce001"
+output_dir: "docs"
+exclude: ["README.md", "\\.sh", "cache"]
+output:
+  html_document:
+    theme: flatly
+    highlight: default
+    code_folding: hide
+    number_sections: false
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    includes:
+      in_header: analytics.html
+      after_body: footer.html
+navbar:
+  title: "CE001"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Aulas"
+      href: aulas.html
+    - text: "Referências"
+      href: referencias.html
+    - text: "Programas"
+      href: programas.html
+    - text: "Notas"
+      href: notas.html
+    - text: "Materiais"
+      menu:
+      - text: "Slides"
+      - text: "Introdução à análise exploratória de dados [PDF]"
+        href: slides/01_Analise_Exploratoria.pdf
+      - text: "Probabilidades [PDF]"
+        href: slides/02_Probabilidades.pdf
+      - text: "Variáveis aleatórias discretas [PDF]"
+        href: slides/03_Variaveis_Discretas.pdf
+      - text: "Medidas resumo [PDF]"
+        href: slides/04_Medidas_Resumo.pdf
+      - text: "Variáveis bidimensionais [PDF]"
+        href: slides/05_Variaveis_Bidimensionais.pdf
+      - text: "Variáveis aleatórias contínuas [PDF]"
+        href: slides/06_Variaveis_Continuas.pdf
+      - text: "Estimação: (A) propriedades e distribuições amostrais [PDF]"
+        href: slides/07a_Estimacao.pdf
+      - text: "Estimação: (B) estimação por intervalo [PDF]"
+        href: slides/07b_Estimacao.pdf
+      - text: "Testes de hipóteses [PDF]"
+        href: slides/08_Teste_Hipotese.pdf
+      - text: "Regressão [PDF]"
+        href: slides/09_Regressao.pdf
+  right:
+    - text: GitHub
+      icon: fa-github fa-lg
+      href: https://github.com/leg-ufpr/ce001
