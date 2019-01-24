@@ -28,8 +28,8 @@ render_site()
 
 **Observações**:
 
-- Os slides são gerados individualmente, a partir dos arquivos fonte
-  `Rmd`, disponíveis no diretório [slides](./slides).
+- Os slides estão em um repositório próprio em
+  https://github.com/leg-ufpr/estbas-slides.
 - A publicação no site é automatizada através do
   [Travis](https://travis-ci.org). Os arquivos para essa automatização
   são [.travis.yml](./.travis.yml) (configura o build como se fosse um
