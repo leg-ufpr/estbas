@@ -4,7 +4,7 @@ exclude: ["README.md", "\\.sh", "cache"]
 output:
   html_document:
     theme: flatly
-    highlight: default
+    highlight: kate
     code_folding: hide
     number_sections: false
     toc: true
