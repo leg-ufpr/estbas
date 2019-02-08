@@ -3,10 +3,206 @@ title: "Notas"
 output:
   html_document:
     toc: false
+    code_folding: show
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}
 source("setup_knitr.R")
 ```
 
-Ver Moodle.
+## Atribuição de notas do pacote exams
+
+A correção automática de questões do pacote **exams** segue uma das
+cinco regras implementadas na função `exams_eval()`, que possui os
+seguintes argumentos
+```{r}
+library(exams)
+args(exams_eval)
+```
+onde os argumentos são:
+
+- `partial = TRUE`: permite que questões de múltipla escolha possuam
+  créditos parciais. Do contrário, uma alternativa falsa marcada como
+  verdadeira anula toda a questão.
+- `negative = FALSE`: controla se a questão pode ter nota negativa (o
+  que pode acontecer de acordo com algumas regras de correção).
+- `rule`: as cinco regras implementadas (detalhes abaixo).
+
+### Regras de pontuação
+
+Em questões de múltipla escolha com créditos parciais, a fração
+atribuída para cada alternativa verdadeira selecionada será sempre
+$1/\text{V}$, onde $\text{V}$ é o número de alternativas corretas
+(verdadeiras). Quando uma alternativa errada (falsa) é selecionada, a
+pontuação (negativa) atribuída varia conforme uma das cinco regras. Para
+cada alternativa errada selecionada, a pontuação negativa atribuída
+será:
+
+- `false2` (default): $1/\max\{\text{F}, 2\}$, onde $\text{F}$ é o
+  número de alternativas erradas (falsas).
+- `false`: usa $1/\text{F}$.
+- `true`: usa $1/\text{V}$, de forma que cada alternativa errada
+  selecionada anula uma alternativa correta.
+- `all`: usa $1$, de forma que uma única alternativa errada selecionada
+  anula todas as corretas selecionadas.
+- `none`: usa $0$, de forma que marcar alternativas erradas não desconta
+  nenhuma fração da nota.
+
+Por exemplo, uma questão com 2 alternativas verdadeiras e 3 falsas terá
+as seguintes pontuações de acordo com cada uma das regras:
+```{r}
+## false2
+eef2 <- exams_eval(partial = TRUE, negative = FALSE, rule = "false2")
+eef2$pointvec("11000")
+## false
+eef <- exams_eval(partial = TRUE, negative = FALSE, rule = "false")
+eef$pointvec("11000")
+## true
+eet <- exams_eval(partial = TRUE, negative = FALSE, rule = "true")
+eet$pointvec("11000")
+## all
+eea <- exams_eval(partial = TRUE, negative = FALSE, rule = "all")
+eea$pointvec("11000")
+## none
+een <- exams_eval(partial = TRUE, negative = FALSE, rule = "none")
+een$pointvec("11000")
+```
+
+Pela definição das regras, a diferença entre `false2` e `false` ocorre
+apenas quando existirem uma ou nenhuma alternativa errada. Veja os
+exemplos:
+```{r}
+## Uma errada ----------------------------------------------------------
+## false2
+eef2$pointvec("11110")
+## false
+eef$pointvec("11110")
+## Nenhuma errada ------------------------------------------------------
+## false2
+eef2$pointvec("11111")
+## false
+eef$pointvec("11111")
+```
+O que ocorre é que `false2` considera que no mínimo sempre haverão duas
+alternativas erradas, para que a pontuação máxima a ser descontada não
+seja maior do que $0.5$ e a questão não seja anulada.
+
+### Cálculo das notas
+
+A nota final de uma questão será portanto dependente de dois fatores:
+
+1. A regra de pontuação adotada.
+2. O número de alternativas verdadeiras/falsas.
+
+Para simplificar, vamos focar apenas nas regras `false2` (a padrão) e
+`false`. De maneira geral, a nota final ($Z$) de uma questão usando a
+regra `false2` será
+
+\[z = \left\{
+  \begin{array}{lr}
+    x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{2},
+    &  \text{se } \text{F} < 2\\
+    x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{\text{F}},
+    &  \text{se } \text{F} \geqslant 2\\
+  \end{array}
+\right.
+\]
+
+onde $X$ é o número de alternativas corretas marcadas, $Y$ é o número de
+alternativas erradas marcadas, $\text{P}$ é a pontuação da questão, e
+$\text{V}$ e $\text{F}$ são o número de alternativas verdadeiras e
+falsas, respectivamente. Para a regra `false`, o cálculo da pontuação
+simplifica apenas para
+$$
+z = x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{\text{F}}
+$$
+
+Os exemplos abaixo mostram a pontuação final em dois cenários:
+
+1. Uma questão com 1 alternativa verdadeira.
+2. Uma questão com 4 alternativas verdadeiras.
+
+```{r}
+## (1) Questão com 1 alternativa verdadeira ----------------------------
+## Uma verdadeira marcada
+eef2$pointsum("10000", "10000") # false2
+eef$pointsum("10000", "10000")  # false
+## Uma verdadeira e uma errada marcadas
+eef2$pointsum("10000", "10001") # false2
+eef$pointsum("10000", "10001")  # false
+## (2) Questão com 4 alternativas verdadeiras --------------------------
+## Quatro verdadeira marcada
+eef2$pointsum("11110", "11110") # false2
+eef$pointsum("11110", "11110")  # false
+## Quatro verdadeiras e uma errada marcadas
+eef2$pointsum("11110", "11111") # false2
+eef$pointsum("11110", "11111")  # false
+```
+
+Com essas regras gerais, podemos definir uma função para fazer o cálculo
+das notas seguindo estas duas regras.
+```{r}
+z <- function(p, v, x, y, negative = FALSE, rule = "false2"){
+    stopifnot(rule %in% c("false2", "false"))
+    f <- 5 - v
+    if(rule == "false2"){
+        res <- ifelse(f < 2,
+                      x * p/v - y * p/2,
+                      x * p/v - y * p/f)
+    } else{
+        res <- x * p/v - y * p/f
+    }
+    res <- ifelse(isFALSE(negative) & res < 0, 0, res)
+    return(res)
+}
+```
+
+Alguns exemplos similares aos cenários acima seriam
+```{r}
+## Uma alternativa verdadeira, uma verdadeira e uma errada marcadas
+z(p = 1, v = 1, x = 1, y = 1, rule = "false2")
+z(p = 1, v = 1, x = 1, y = 1, rule = "false")
+## Quatro alternativas verdadeiras, quatro verdadeiras e uma errada
+## marcadas
+z(p = 1, v = 4, x = 4, y = 1, rule = "false2")
+z(p = 1, v = 4, x = 4, y = 1, rule = "false")
+```
+
+Com isso, podemos criar uma função que gera uma tabela com todos os
+possíveis resultados para um número diferente de alternativas
+verdadeiras/falsas.
+```{r}
+makegrid <- function(p, v, ...){
+    f <- 5 - v
+    gx <- 0:v
+    gy <- 0:f
+    grid <- expand.grid(x = gx, y = gy)
+    for(i in 1:nrow(grid)){
+        grid$z[i] <- z(p = p, v = v, x = grid$x[i], y = grid$y[i], ...)
+    }
+    tab <- matrix(grid$z, nrow = length(unique(grid$x)),
+                  ncol = length(unique(grid$y)),
+                  dimnames = list(V = unique(grid$x),
+                                  F = unique(grid$y)))
+    return(round(tab, 2))
+}
+```
+
+Assim, temos todas as possibilidades para cada regra:
+
+```{r}
+## false2 --------------------------------------------------------------
+makegrid(p = 1, v = 0, rule = "false2")
+makegrid(p = 1, v = 1, rule = "false2")
+makegrid(p = 1, v = 2, rule = "false2")
+makegrid(p = 1, v = 3, rule = "false2")
+makegrid(p = 1, v = 4, rule = "false2")
+makegrid(p = 1, v = 5, rule = "false2")
+
+## false ---------------------------------------------------------------
+makegrid(p = 1, v = 1, rule = "false")
+makegrid(p = 1, v = 2, rule = "false")
+makegrid(p = 1, v = 3, rule = "false")
+makegrid(p = 1, v = 4, rule = "false")
+makegrid(p = 1, v = 5, rule = "false")
+```
