@@ -10,7 +10,139 @@ output:
 source("setup_knitr.R")
 ```
 
-## Atribuição de notas do pacote exams
+# Como são calculadas as notas no Moodle {.tabset}
+
+## Versão simplificada
+
+As questões de múltipla escolha feitas no Moodle possuem um método de
+atribuição de pontos que segue algumas regras, demonstradas a seguir.
+
+A primeira coisa a saber é que o valor de cada alternativa muda conforme
+o número de alternativas veradeiras/falsas. Cada alternativa verdadeira
+terá pontuação sempre dada por
+$$
+\frac{1}{\text{# verdadeiras}}
+$$
+ou seja, cada alternativa verdadeira será uma fração do número total de
+alternativas verdadeiras.
+
+Ao marcar uma alternativa falsa, existirá uma penalização, ou seja, você
+receberá uma pontuação negativa por ter marcado uma alternativa falsa.
+Essa pontuação negativa será utilizada para descontar da nota final
+obtida marcando-se as alternativas verdadeiras. O cálculo da pontuação
+de cada alternativa falsa marcada é dado por
+$$
+\frac{1}{\max\{ \text{# falsas, 2} \}}
+$$
+A ideia é a mesma da pontuação das alternativas verdadeiras, mas se
+houverem apenas uma ou nenhuma alternativa falsa na questão, a fração será
+sempre $1/2$. Esse detalhe serve para que, no caso de ocorrer apenas uma
+alternativa falsa, a marcação dessa alternativa não anule toda a
+questão. Portanto, no caso de ocorrer apenas uma alternativa falsa, a
+penalização por marcar essa alternativa será $1/2 = 0,5$, e não $1/1 =
+1$ se não houvesse esse detalhe.
+
+É importante notar que, de acordo com esses critérios, a nota final
+**poderia** ser negativa. No entanto, **a nota nunca será negativa**, já
+que existe uma restrição para que seja no mínimo **zero**.
+
+### Exemplos
+
+Suponha uma questão com 2 alternativas verdadeiras (V) e 3 falsas
+(F). A pontuação de cada alternativa será:
+
+- $1/2 = 0,5$ para alternativas verdadeiras
+- $1/3 = 0,33$ para alternativas falsas
+
+Alguns cenários possíveis:
+
+- Ao marcar 2 V e 0 F, a nota será $1,00 - 0,00 = 1,00$.
+- Ao marcar 2 V e 1 F, a nota será $1,00 - 0,33 = 0,67$.
+- Ao marcar 2 V e 2 F, a nota será $1,00 - 0,66 = 0,34$.
+- Ao marcar 1 V e 1 F, a nota será $0,50 - 0,33 = 0,17$.
+- Ao marcar 1 V e 2 F, a nota será $0,50 - 0,66 = 0,00$.
+- Ao marcar 2 V e 3 F, a nota será $1,00 - 1,00 = 0,00$.
+
+Suponha uma questão com 4 alternativas verdadeiras (V) e 1 falsa
+(F). A pontuação de cada alternativa será:
+
+- $1/4 = 0,25$ para alternativas verdadeiras
+- $1/2 = 0,5$ para alternativa falsa (observe o detalhe da regra)
+
+Alguns cenários possíveis:
+
+- Ao marcar 4 V e 0 F, a nota será $1,00 - 0,00 = 1,00$.
+- Ao marcar 4 V e 1 F, a nota será $1,00 - 0,50 = 0,50$.
+- Ao marcar 3 V e 0 F, a nota será $0,75 - 0,00 = 0,75$.
+- Ao marcar 3 V e 1 F, a nota será $0,75 - 0,50 = 0,25$.
+- Ao marcar 2 V e 1 F, a nota será $0,50 - 0,50 = 0,00$.
+- Ao marcar 1 V e 1 F, a nota será $0,25 - 0,50 = 0,00$.
+
+### Tabelas de notas
+
+Abaixo você pode conferir as pontuações atríbuidas ao marcar um certo
+número de alternativas verdaeiras e falsas em questões com 1 a 5
+alternativas verdadeiras.
+
+As linhas das tabelas se referem ao número de alternativas verdadeiras
+marcadas, enquento que as colunas se referem ao número de alternativas
+falsas marcadas.
+
+```{r, echo=FALSE}
+z <- function(p, v, x, y, negative = FALSE, rule = "false2"){
+    stopifnot(rule %in% c("false2", "false"))
+    f <- 5 - v
+    if(rule == "false2"){
+        res <- ifelse(f < 2,
+                      x * p/v - y * p/2,
+                      x * p/v - y * p/f)
+    } else{
+        res <- x * p/v - y * p/f
+    }
+    res <- ifelse(isFALSE(negative) & res < 0, 0, res)
+    return(res)
+}
+makegrid <- function(p, v, ...){
+    f <- 5 - v
+    gx <- 0:v
+    gy <- 0:f
+    grid <- expand.grid(x = gx, y = gy)
+    for(i in 1:nrow(grid)){
+        grid$z[i] <- z(p = p, v = v, x = grid$x[i], y = grid$y[i], ...)
+    }
+    tab <- matrix(grid$z, nrow = length(unique(grid$x)),
+                  ncol = length(unique(grid$y)),
+                  dimnames = list(V = unique(grid$x),
+                                  F = unique(grid$y)))
+    return(round(tab, 2))
+}
+```
+
+Questão com 1 alternativa verdadeira e 4 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 1, rule = "false2")
+```
+Questão com 2 alternativas verdadeiras e 3 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 2, rule = "false2")
+```
+Questão com 3 alternativas verdadeiras e 2 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 3, rule = "false2")
+```
+Questão com 4 alternativas verdadeiras e 1 falsa
+```{r, echo=FALSE}
+makegrid(p = 1, v = 4, rule = "false2")
+```
+Questão com 5 alternativas verdadeiras e 0 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 5, rule = "false2")
+```
+
+
+## Detalhes técnicos
+
+### Atribuição de notas do pacote exams
 
 A correção automática de questões do pacote **exams** segue uma das
 cinco regras implementadas na função `exams_eval()`, que possui os
