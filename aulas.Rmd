@@ -195,41 +195,42 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 ```
 
 - **PARTE I**
-- **20/02 (Qua)**: Apresentação da disciplina.
-- **22/02 (Sex)**: (1) Introdução à análise exploratória de dados.
-- **27/02 (Qua)**: Exercícios.
-- **01/03 (Sex)**: Sabatina 1.
-- **06/03 (Qua)**: **Feriado**.
-- **08/03 (Sex)**: (2) Probabilidades.
-- **13/03 (Qua)**: Exercícios.
-- **15/03 (Sex)**: Sabatina 2.
-- **20/03 (Qua)**: (3) Variáveis aleatórias discretas.
-- **22/03 (Sex)**: Exercícios.
-- **27/03 (Qua)**: Sabatina 3.
-- **29/03 (Sex)**: **Prova 1**.
+- **20/02 (Qua)**: ~~Apresentação da disciplina.~~ Semana acadêmica.
+- **22/02 (Sex)**: ~~(1) Introdução à análise exploratória de dados.~~
+  Semana acadêmica.
+- **27/02 (Qua)**: Apresentação da disciplina.
+- **01/03 (Sex)**: (1) Introdução à análise exploratória de dados.
+- **06/03 (Qua)**: Exercícios.
+- **08/03 (Sex)**: Sabatina 1.
+- **13/03 (Qua)**: **Feriado**.
+- **15/03 (Sex)**: (2) Probabilidades.
+- **20/03 (Qua)**: Exercícios.
+- **22/03 (Sex)**: Sabatina 2.
+- **27/03 (Qua)**: (3) Variáveis aleatórias discretas.
+- **29/03 (Sex)**: Exercícios.
+- **03/04 (Qua)**: Sabatina 3.
+- **05/04 (Sex)**: **Prova 1**.
 - **PARTE II**
-- **03/04 (Qua)**: (4) Medidas resumo.
-- **05/04 (Sex)**: Exercícios.
-- **10/04 (Qua)**: Sabatina 4.
-- **12/04 (Sex)**: (5) Variáveis bidimensionais.
-- **17/04 (Qua)**: Exercícios.
+- **10/04 (Qua)**: (4) Medidas resumo.
+- **12/04 (Sex)**: Exercícios.
+- **17/04 (Qua)**: Sabatina 4.
 - **19/04 (Sex)**: **Feriado**.
-- **24/04 (Qua)**: Sabatina 5.
-- **26/04 (Sex)**: (6) Variáveis aleatórias contínuas.
+- **24/04 (Qua)**: (5) Variáveis bidimensionais.
+- **26/04 (Sex)**: Exercícios.
 - **01/05 (Qua)**: **Feriado**.
-- **03/05 (Sex)**: Exercícios.
-- **08/05 (Qua)**: Sabatina 6.
-- **10/05 (Sex)**: **Prova 2**.
+- **03/05 (Sex)**: Sabatina 5.
+- **08/05 (Qua)**: (6) Variáveis aleatórias contínuas.
+- **10/05 (Sex)**: Exercícios.
+- **15/05 (Qua)**: Sabatina 6.
+- **17/05 (Sex)**: **Prova 2**.
 - **PARTE III**
-- **15/05 (Qua)**: (7) Inferência estatística - estimação.
-- **17/05 (Sex)**: Exercícios.
-- **22/05 (Qua)**: Sabatina 7.
-- **24/05 (Sex)**: (8) Inferência estatística - testes de hipótese.
-- **29/05 (Qua)**: Exercícios.
-- **31/05 (Sex)**: Sabatina 8.
-- **05/06 (Qua)**: (9) Tópicos especiais.
-- **07/06 (Sex)**: Exercícios.
-- **12/06 (Qua)**: Sabatina 9.
-- **14/06 (Sex)**: Revisão.
+- **22/05 (Qua)**: (7) Inferência estatística - estimação.
+- **24/05 (Sex)**: Exercícios.
+- **29/05 (Qua)**: Sabatina 7.
+- **31/05 (Sex)**: (8) Inferência estatística - testes de hipótese.
+- **05/06 (Qua)**: Exercícios.
+- **07/06 (Sex)**: Sabatina 8.
+- **12/06 (Qua)**: (9) Tópicos especiais.
+- **14/06 (Sex)**: Exercícios/Sabatina 9.
 - **19/06 (Qua)**: **Prova 3**.
 - **21/06 (Sex)**: **Feriado**.
