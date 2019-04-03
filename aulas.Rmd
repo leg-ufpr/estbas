@@ -29,6 +29,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
            datas2, " (Sex)", "**:\n"))
 ```
 
+- **PARTE I**
 - **20/02 (Qua)**: Apresentação da disciplina.
 - **22/02 (Sex)**: (1) Introdução à análise exploratória de dados.
 - **27/02 (Qua)**: Exercícios.
@@ -41,7 +42,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **22/03 (Sex)**: Exercícios.
 - **27/03 (Qua)**: Sabatina 3.
 - **29/03 (Sex)**: **Prova 1**.
-
+- **PARTE II**
 - **03/04 (Qua)**: (4) Medidas resumo.
 - **05/04 (Sex)**: Exercícios.
 - **10/04 (Qua)**: Sabatina 4.
@@ -54,7 +55,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **03/05 (Sex)**: Exercícios.
 - **08/05 (Qua)**: Sabatina 6.
 - **10/05 (Sex)**: **Prova 2**.
-
+- **PARTE III**
 - **15/05 (Qua)**: (7) Inferência estatística - estimação.
 - **17/05 (Sex)**: Exercícios.
 - **22/05 (Qua)**: Sabatina 7.
@@ -83,6 +84,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
            datas2, " (Qui)", "**:\n"))
 ```
 
+- **PARTE I**
 - **19/02 (Ter)**: Apresentação da disciplina.
 - **21/02 (Qui)**: (1) Introdução à análise exploratória de dados.
 - **26/02 (Ter)**: Exercícios.
@@ -95,7 +97,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **21/03 (Qui)**: Exercícios.
 - **26/03 (Ter)**: Sabatina 3.
 - **28/03 (Qui)**: **Prova 1**.
-
+- **PARTE II**
 - **02/04 (Ter)**: (4) Medidas resumo.
 - **04/04 (Qui)**: Exercícios.
 - **09/04 (Ter)**: Sabatina 4.
@@ -108,7 +110,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **02/05 (Qui)**: Revisão.
 - **07/05 (Ter)**: **Prova 2**.
 - **09/05 (Qui)**:
-
+- **PARTE III**
 - **14/05 (Ter)**: (7) Inferência estatística - estimação.
 - **16/05 (Qui)**: Exercícios.
 - **21/05 (Ter)**: Sabatina 7.
@@ -137,6 +139,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
            datas2, " (Sex)", "**:\n"))
 ```
 
+- **PARTE I**
 - **20/02 (Qua)**: Apresentação da disciplina.
 - **22/02 (Sex)**: (1) Introdução à análise exploratória de dados.
 - **27/02 (Qua)**: Exercícios.
@@ -149,7 +152,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **22/03 (Sex)**: Exercícios.
 - **27/03 (Qua)**: Sabatina 3.
 - **29/03 (Sex)**: **Prova 1**.
-
+- **PARTE II**
 - **03/04 (Qua)**: (4) Medidas resumo.
 - **05/04 (Sex)**: Exercícios.
 - **10/04 (Qua)**: Sabatina 4.
@@ -162,7 +165,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **03/05 (Sex)**: Exercícios.
 - **08/05 (Qua)**: Sabatina 6.
 - **10/05 (Sex)**: **Prova 2**.
-
+- **PARTE III**
 - **15/05 (Qua)**: (7) Inferência estatística - estimação.
 - **17/05 (Sex)**: Exercícios.
 - **22/05 (Qua)**: Sabatina 7.
@@ -191,6 +194,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
            datas2, " (Sex)", "**:\n"))
 ```
 
+- **PARTE I**
 - **20/02 (Qua)**: Apresentação da disciplina.
 - **22/02 (Sex)**: (1) Introdução à análise exploratória de dados.
 - **27/02 (Qua)**: Exercícios.
@@ -203,7 +207,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **22/03 (Sex)**: Exercícios.
 - **27/03 (Qua)**: Sabatina 3.
 - **29/03 (Sex)**: **Prova 1**.
-
+- **PARTE II**
 - **03/04 (Qua)**: (4) Medidas resumo.
 - **05/04 (Sex)**: Exercícios.
 - **10/04 (Qua)**: Sabatina 4.
@@ -216,7 +220,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **03/05 (Sex)**: Exercícios.
 - **08/05 (Qua)**: Sabatina 6.
 - **10/05 (Sex)**: **Prova 2**.
-
+- **PARTE III**
 - **15/05 (Qua)**: (7) Inferência estatística - estimação.
 - **17/05 (Sex)**: Exercícios.
 - **22/05 (Qua)**: Sabatina 7.
@@ -229,57 +233,3 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **14/06 (Sex)**: Revisão.
 - **19/06 (Qua)**: **Prova 3**.
 - **21/06 (Sex)**: **Feriado**.
-
-### Enfermagem (E)
-
-```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-18"), as.Date("2019-06-17"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-20"), as.Date("2019-06-19"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
-           datas2, " (Qua)", "**:\n"))
-```
-
-- **18/02 (Seg)**: Apresentação da disciplina.
-- **20/02 (Qua)**: (1) Introdução à análise exploratória de dados.
-- **25/02 (Seg)**: Exercícios.
-- **27/02 (Qua)**: Sabatina 1.
-- **04/03 (Seg)**: **Feriado**.
-- **06/03 (Qua)**: **Feriado**.
-- **11/03 (Seg)**: (2) Probabilidades.
-- **13/03 (Qua)**: Exercícios.
-- **18/03 (Seg)**: Sabatina 2.
-- **20/03 (Qua)**: (3) Variáveis aleatórias discretas.
-- **25/03 (Seg)**: Exercícios.
-- **27/03 (Qua)**: Sabatina 3.
-- **01/04 (Seg)**: **Prova 1**.
-
-- **03/04 (Qua)**: (4) Medidas resumo.
-- **08/04 (Seg)**: Exercícios.
-- **10/04 (Qua)**: Sabatina 4.
-- **15/04 (Seg)**: (5) Variáveis bidimensionais.
-- **17/04 (Qua)**: Exercícios.
-- **22/04 (Seg)**: Sabatina 5.
-- **24/04 (Qua)**: (6) Variáveis aleatórias contínuas.
-- **29/04 (Seg)**: Exercícios.
-- **01/05 (Qua)**: Sabatina 6.
-- **06/05 (Seg)**: Revisão.
-- **08/05 (Qua)**: **Prova 2**.
-
-- **13/05 (Seg)**: (7) Inferência estatística - estimação.
-- **15/05 (Qua)**: Exercícios.
-- **20/05 (Seg)**: Sabatina 7.
-- **22/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
-- **27/05 (Seg)**: Exercícios.
-- **29/05 (Qua)**: Sabatina 8.
-- **03/06 (Seg)**: (9) Tópicos especiais.
-- **05/06 (Qua)**: Exercícios.
-- **10/06 (Seg)**: Sabatina 9.
-- **12/06 (Qua)**: Revisão.
-- **17/06 (Seg)**: **Prova 3**.
-- **19/06 (Qua)**:

@@ -26,8 +26,6 @@ Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 - **CE009 - Introdução à Estatística**
   - Engenharia Ambiental (AMB)
   - Agronomia (A)
-- **CE020 - Bioestatística**
-  - Enfermagem (E)
 
 # Detalhes da oferta da disciplina
 
@@ -38,20 +36,17 @@ Esta página abrange o conteúdo das seguintes disciplinas e cursos:
   - [Wagner Hugo Bonat][], [LEG][]/DEST/UFPR
 - **Horários e Locais:**
   - Ciências Biológicas (MB):
-    - Quarta, 07:30 - 09:30h
-    - Sexta, 07:30 - 09:30h
+    - Quarta, 07:30 - 09:30h, DEST Multimídia
+    - Sexta, 07:30 - 09:30h, DEST Multimídia
   - Engenharia Industrial Madeireira (MD) e Engenharia Ambiental (AMB):
-    - Terça, 13:30 - 15:30h
-    - Sexta, 13:30 - 15:30h
+    - Terça, 13:30 - 15:30h, DEST Multimídia
+    - Sexta, 13:30 - 15:30h, DEST Multimídia
   - Engenharia Madeireira (MN):
-    - Quarta, 20:30 - 22:30
-    - Sexta, 20:30 - 22:30h
+    - Quarta, 20:30 - 22:30, PC-16
+    - Sexta, 20:30 - 22:30h, PC-16
   - Agronomia (A):
-    - Quarta, 15:30 - 17:30
-    - Sexta, 15:30 - 17:30h
-  - Enfermagem (E):
-    - Segunda, 13:30 - 15:30
-    - Quarta, 13:30 - 15:30
+    - Quarta, 15:30 - 17:30, PH-11
+    - Sexta, 15:30 - 17:30h, PH-11
 - **Horários de atendimento dos professores:**
     - Terças e quintas, 16:00-20:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.
