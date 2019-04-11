@@ -12,8 +12,7 @@ source("setup_knitr.R")
 [![Build Status](https://travis-ci.org/leg-ufpr/estbas.svg?branch=master)](https://travis-ci.org/leg-ufpr/estbas)
 
 <div class="alert alert-danger" role="alert">
-**ATENÇÃO! Aviso somente para a turma de AGRONOMIA**: a Prova 1 será
-realizada na próxima quarta-feira (10/05) no horário normal de aula.
+**ATENÇÃO!** Por decisão do Setor de Ciências Exatas, as aulas de hoje (11/04) estão suspensas.
 </div>
 
 # Disciplinas
