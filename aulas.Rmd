@@ -101,15 +101,15 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **02/04 (Ter)**: (4) Medidas resumo.
 - **04/04 (Qui)**: Exercícios.
 - **09/04 (Ter)**: Sabatina 4.
-- **11/04 (Qui)**: (5) Variáveis bidimensionais.
-- **16/04 (Ter)**: Exercícios.
-- **18/04 (Qui)**: Sabatina 5.
-- **23/04 (Ter)**: (6) Variáveis aleatórias contínuas.
-- **25/04 (Qui)**: Exercícios.
-- **30/04 (Ter)**: Sabatina 6.
-- **02/05 (Qui)**: Revisão.
-- **07/05 (Ter)**: **Prova 2**.
-- **09/05 (Qui)**:
+- **11/04 (Qui)**: ~~(5) Variáveis bidimensionais.~~
+- **16/04 (Ter)**: (5) Variáveis bidimensionais.
+- **18/04 (Qui)**: Exercícios.
+- **23/04 (Ter)**: Sabatina 5.
+- **25/04 (Qui)**: (6) Variáveis aleatórias contínuas.
+- **30/04 (Ter)**: Exercícios.
+- **02/05 (Qui)**: Sabatina 6.
+- **07/05 (Ter)**: Revisão.
+- **09/05 (Qui)**: **Prova 2**.
 - **PARTE III**
 - **14/05 (Ter)**: (7) Inferência estatística - estimação.
 - **16/05 (Qui)**: Exercícios.
