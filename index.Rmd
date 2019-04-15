@@ -11,9 +11,8 @@ source("setup_knitr.R")
 
 [![Build Status](https://travis-ci.org/leg-ufpr/estbas.svg?branch=master)](https://travis-ci.org/leg-ufpr/estbas)
 
-<div class="alert alert-danger" role="alert">
-**ATENÇÃO!** Nesta sexta-feira (12/04) aulas normais.
-</div>
+<!-- <div class="alert alert-danger" role="alert"> -->
+<!-- </div> -->
 
 # Disciplinas
 
