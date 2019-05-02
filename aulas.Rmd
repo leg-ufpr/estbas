@@ -59,7 +59,7 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **15/05 (Qua)**: (7) Inferência estatística - estimação.
 - **17/05 (Sex)**: Exercícios.
 - **22/05 (Qua)**: Sabatina 7.
-- **24/05 (Sex)**: (8) Inferência estatística - testes de hipótese.
+- **24/05 (Sex)**: (8) Inferência estatística - testes de hipótese. **ATENÇÃO MUDANÇA DE SALA NESTE DIA**
 - **29/05 (Qua)**: Exercícios.
 - **31/05 (Sex)**: Sabatina 8.
 - **05/06 (Qua)**: (9) Tópicos especiais.
