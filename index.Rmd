@@ -11,8 +11,18 @@ source("setup_knitr.R")
 
 [![Build Status](https://travis-ci.org/leg-ufpr/estbas.svg?branch=master)](https://travis-ci.org/leg-ufpr/estbas)
 
-<!-- <div class="alert alert-danger" role="alert"> -->
-<!-- </div> -->
+<div class="alert alert-danger" role="alert">
+**AVISOS!**
+
+- **Para todas as turmas**: aqueles que quiserem podem tirar dúvidas ou
+  pedir auxílio para os monitores das disciplinas. Consulte horários e
+  local [aqui](http://www.est.ufpr.br/monitoria/monitoria2019-1.pdf).
+- **Somente para a turma de Agronomia**: a sabatina desta semana
+  ocorrerá mesmo durante a semana acadêmica, mas ficará disponível para
+  resposta durante os dias 08/05 (quarta-feira) e 09/05 (quinta-feira).
+  Não haverá aula sexta-feira (10/05).
+
+</div>
 
 # Disciplinas
 
