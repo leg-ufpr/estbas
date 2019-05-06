@@ -220,17 +220,18 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **01/05 (Qua)**: **Feriado**.
 - **03/05 (Sex)**: Exercícios.
 - **08/05 (Qua)**: Sabatina 5.
-- **10/05 (Sex)**: (6) Variáveis aleatórias contínuas.
-- **15/05 (Qua)**: Exercícios.
-- **17/05 (Sex)**: Sabatina 6.
-- **22/05 (Qua)**: **Prova 2**
+- **10/05 (Sex)**: ~~(6) Variáveis aleatórias contínuas~~. Semana
+  acadêmica.
+- **15/05 (Qua)**: (6) Variáveis aleatórias contínuas.
+- **17/05 (Sex)**: Exercícios.
+- **22/05 (Qua)**: Sabatina 6.
+- **24/05 (Sex)**: **Prova 2**
 - **PARTE III**
-- **24/05 (Sex)**: (7) Inferência estatística - estimação.
-- **29/05 (Qua)**: Exercícios.
-- **31/05 (Sex)**: Sabatina 7.
-- **05/06 (Qua)**: (8) Inferência estatística - testes de hipótese.
-- **07/06 (Sex)**: Exercícios.
-- **12/06 (Qua)**: Sabatina 8.
-- **14/06 (Sex)**: Revisão.
+- **29/05 (Qua)**: (7) Inferência estatística - estimação.
+- **31/05 (Sex)**: Exercícios.
+- **05/06 (Qua)**: Sabatina 7.
+- **07/06 (Sex)**: (8) Inferência estatística - testes de hipótese.
+- **12/06 (Qua)**: Exercícios.
+- **14/06 (Sex)**: Sabatina 8.
 - **19/06 (Qua)**: **Prova 3**.
 - **21/06 (Sex)**: **Feriado**.
