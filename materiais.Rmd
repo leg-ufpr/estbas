@@ -21,6 +21,10 @@ Os slides são baseados no livro:
       Estatística](http://www.ime.usp.br/~noproest). São Paulo: EDUSP,
       2015 (7ª edição).
 
+Tabelas
+- [Formulario de estatística](http://cursos.leg.upfr.br/estbas/formularioEST.pdf) 
+- [Tabelas estatísticas](http://cursos.leg.ufpr.br/estbas/tabelasEST.pdf) 
+
 ## Arquivos
 
 1. [Introdução à Análise Exploratória de dados](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf)
