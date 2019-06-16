@@ -14,14 +14,7 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **Para todas as turmas**: aqueles que quiserem podem tirar dúvidas ou
-  pedir auxílio para os monitores das disciplinas. Consulte horários e
-  local [aqui](http://www.est.ufpr.br/monitoria/monitoria2019-1.pdf).
-- **Somente para a turma de Agronomia**: a sabatina desta semana
-  ocorrerá mesmo durante a semana acadêmica, mas ficará disponível para
-  resposta durante os dias 08/05 (quarta-feira) e 09/05 (quinta-feira).
-  Não haverá aula sexta-feira (10/05).
-
+- **Para todas as turmas**: haverá teste extra no Moodle que ficará aberto terça e quarta. O conteúdo é o mesmo da avaliação 3.
 </div>
 
 # Disciplinas
