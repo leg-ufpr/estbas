@@ -239,27 +239,10 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 <style type="text/css">
 .code-folding-btn { margin-bottom: 4px; }
 </style>
-<script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
-});
-</script>
 
 
 
@@ -340,6 +323,20 @@ $(document).ready(function () {
 <p><strong>AVISOS!</strong></p>
 <ul>
 <li><strong>Para todas as turmas</strong>: haverá teste extra no Moodle que ficará aberto terça e quarta. O conteúdo é o mesmo da avaliação 3.</li>
+<li><strong>SEGUNDA CHAMADA:</strong> a segunda chamada das provas será realizada no dia 26/06 (quarta-feira). Para mais informações acesse essa <a href="segunda.html">página</a> (somente os alunos listados ali poderão fazer a segunda chamada).</li>
+<li><strong>EXAMES:</strong> os exames serão realizados nas seguintes datas (as salas são as mesmas):
+<ul>
+<li><strong>02/07 (terça-feira)</strong>
+<ul>
+<li><strong>13:30</strong> Engenharia Ambiental (AMB) e Eng. Ind. Madeireira (MD)</li>
+</ul></li>
+<li><strong>03/07 (quarta-feira)</strong>
+<ul>
+<li><strong>07:30</strong> Ciências Biológicas (MB)</li>
+<li><strong>15:30</strong> Agronomia (A)</li>
+<li><strong>20:30</strong> Eng. Ind. Madeireira (MN)</li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 <div id="disciplinas" class="section level1">
@@ -467,6 +464,28 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
