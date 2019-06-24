@@ -25,5 +25,7 @@ source("setup_knitr.R")
 | MARINA BRISOLA                     | Agronomia            | CE009      | P2    |
 | CAROLINE PRADO                     | Eng. Ind. Madeireira | CE003      | P2    |
 | LARISSA DE JESUS FERREIRA          | Eng. Ind. Madeireira | CE003      | P2    |
+| VALERIA TEIXEIRA CARRARO           | Eng. Ind. Madeireira | CE003      | P2    |
 | FERNANDA TERUMI CASONI             | Ciências Biológicas  | CE001      | P2    |
 | ANANDA KARLA ALVES NEUNDORF        | Ciências Biológicas  | CE001      | P2    |
+| GEOVANNA CARVALHO MARIOSI DA SILVA | Ciências Biológicas  | CE001      | P3    |
