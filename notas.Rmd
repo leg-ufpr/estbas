@@ -31,7 +31,7 @@ kable(nt, row.names = FALSE)
 ```
 
 
-# Como são calculadas as notas no Moodle {.tabset}
+## Como são calculadas as notas no Moodle {.tabset}
 
 ## Versão simplificada
 
