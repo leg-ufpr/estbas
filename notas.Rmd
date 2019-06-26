@@ -30,3 +30,13 @@ nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
 
+### Biologia
+
+```{r biologia, echo=FALSE}
+nt <- read.csv('misc/bio.csv')
+nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
+nt$ResultParcial <- rpf(nt$MediaParcial)
+kable(nt, row.names = FALSE)
+```
+
+
