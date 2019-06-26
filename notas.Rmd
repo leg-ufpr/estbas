@@ -14,6 +14,13 @@ mpf <- function(x) {
     p <- mean(x[c(4, 8, 13)])
     return(l*4 + p*6)
 }
+mpfagro <- function(x) {
+    x[is.na(x)] <- 0
+    l <- mean(sort(x[c(1:3, 5:7, 9:11)])[4:9])
+    p <- mean(x[c(4, 8, 12)])
+    return(l*4 + p*6)
+}
+
 rpf <- function(x)
   ifelse(x<39, 'Reprovado',
          ifelse(x>69, 'Aprovado', 'Final'))
@@ -24,7 +31,7 @@ rpf <- function(x)
 ### Eng. Amb. (AMB) & Eng. Ind. Mad. (MD)
 
 ```{r engamb, echo=FALSE}
-nt <- read.csv('misc/ambm.csv')
+nt <- read.csv('misc/ambMad.csv')
 nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
@@ -34,6 +41,24 @@ kable(nt, row.names = FALSE)
 
 ```{r biologia, echo=FALSE}
 nt <- read.csv('misc/bio.csv')
+nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
+nt$ResultParcial <- rpf(nt$MediaParcial)
+kable(nt, row.names = FALSE)
+```
+
+### Agronomia
+
+```{r agronomia, echo=FALSE}
+nt <- read.csv('misc/agro.csv')
+nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpfagro))
+nt$ResultParcial <- rpf(nt$MediaParcial)
+kable(nt, row.names = FALSE)
+```
+
+### Madeireira Noturno
+
+```{r biologia, echo=FALSE}
+nt <- read.csv('misc/madNot.csv')
 nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
