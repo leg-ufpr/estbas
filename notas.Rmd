@@ -23,9 +23,9 @@ rpf <- function(x)
 
 ### CE009-Engenharia Ambiental
 
-```{r engamb}
+```{r engamb, echo=FALSE}
 nt <- read.csv('misc/ambm.csv')
-nt$MediaParcial <- apply(as.matrix(nt[-1]), 1, mpf)
+nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
