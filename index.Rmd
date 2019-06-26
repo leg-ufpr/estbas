@@ -14,7 +14,20 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **Para todas as turmas**: haverá teste extra no Moodle que ficará aberto terça e quarta. O conteúdo é o mesmo da avaliação 3.
+- **Para todas as turmas**: haverá teste extra no Moodle que ficará
+  aberto terça e quarta. O conteúdo é o mesmo da avaliação 3.
+- **SEGUNDA CHAMADA:** a segunda chamada das provas será realizada no
+dia 26/06 (quarta-feira). Para mais informações acesse essa
+[página](segunda.html) (somente os alunos listados ali poderão fazer a
+segunda chamada).
+- **EXAMES:** os exames serão realizados nas seguintes datas (as salas
+  são as mesmas):
+  - **02/07 (terça-feira)**
+    - **13:30** Engenharia Ambiental (AMB) e Eng. Ind. Madeireira (MD)
+  - **03/07 (quarta-feira)**
+    - **07:30** Ciências Biológicas (MB)
+    - **15:30** Agronomia (A)
+    - **20:30** Eng. Ind. Madeireira (MN)
 </div>
 
 # Disciplinas

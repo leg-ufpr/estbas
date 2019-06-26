@@ -1,0 +1,31 @@
+---
+title: "Segunda chamada"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE, cache=FALSE}
+source("setup_knitr.R")
+```
+
+- **Data: 26/06 (quarta-feira)**
+- **Horário: 14:00 hs**
+- **Local: Sala DEST Multimídia (Bloco PA)**
+
+**Alunos aptos a fazer a segunda chamada:**
+
+| Nome                               | Curso                | Disciplina | Prova |
+| :--                                | :--                  | :--        | :--   |
+| ALEXANDRA DOS SANTOS AIZONA        | Agronomia            | CE009      | P1    |
+| FABIO LUIS ALVES                   | Eng. Ind. Madeireira | CE003      | P1    |
+| VICTOR KSHESEK PIZARRO DE OLIVEIRA | Ciências Biológicas  | CE001      | P1    |
+| POLLYANA OLBERA BIRNFELD           | Ciências Biológicas  | CE001      | P1    |
+| ALINE DE CARVALHO MARTINS          | Agronomia            | CE009      | P2    |
+| MARINA BRISOLA                     | Agronomia            | CE009      | P2    |
+| CAROLINE PRADO                     | Eng. Ind. Madeireira | CE003      | P2    |
+| LARISSA DE JESUS FERREIRA          | Eng. Ind. Madeireira | CE003      | P2    |
+| VALERIA TEIXEIRA CARRARO           | Eng. Ind. Madeireira | CE003      | P2    |
+| FERNANDA TERUMI CASONI             | Ciências Biológicas  | CE001      | P2    |
+| ANANDA KARLA ALVES NEUNDORF        | Ciências Biológicas  | CE001      | P2    |
+| GEOVANNA CARVALHO MARIOSI DA SILVA | Ciências Biológicas  | CE001      | P3    |
