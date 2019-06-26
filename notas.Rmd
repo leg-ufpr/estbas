@@ -57,7 +57,7 @@ kable(nt, row.names = FALSE)
 
 ### Madeireira Noturno
 
-```{r biologia, echo=FALSE}
+```{r madeireira, echo=FALSE}
 nt <- read.csv('misc/madNot.csv')
 nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
