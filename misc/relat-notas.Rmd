@@ -1,0 +1,93 @@
+---
+title: "Analise notas estbas"
+author: "Elias"
+date: "June 27, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+mpf <- function(x) {
+    x[is.na(x)] <- 0
+    l <- mean(sort(x[c(1:3, 5:7, 9:12)])[4:10])
+    p <- mean(x[c(4, 8, 13)])
+    return(l*4 + p*6)
+}
+mpfagro <- function(x) {
+    x[is.na(x)] <- 0
+    l <- mean(sort(x[c(1:3, 5:7, 9:11)])[4:9])
+    p <- mean(x[c(4, 8, 12)])
+    return(l*4 + p*6)
+}
+
+rpf <- function(x)
+  ifelse(x<39, 'Reprovado',
+  ifelse(x>69, 'Aprovado', 'Final'))
+```
+
+## Relatorio de notas 
+
+Turmas de estatistica basica semestre 1 de 2019 
+
+```{r preparadados, echo=FALSE, results='hide'}
+fls <- c('ambMad', 'bio', 'agro', 'madNot')
+nts <- Reduce('rbind', lapply(fls, function(x) {
+    nt <- read.csv2(paste0(x, '.csv'))
+    for (j in 2:ncol(nt))
+        nt[is.na(nt[,j]), j] <- 0
+    if (x=='agro') {
+        nt$MParcial <- apply(nt[-(1)], 1, mpfagro)
+        nt <- data.frame(nt[, 1:(ncol(nt)-3)],
+                         Cap9=NA, nt[, (ncol(nt)-2):ncol(nt)])
+    } else {
+        nt$MParcial <- apply(nt[-(1)], 1, mpf)
+    }
+    return(data.frame(nt, turma=x)) 
+}))
+nts$RParcial <- rpf(nts$MParcial)
+```
+
+### O que fazer com os seguintes casos: (olhar provas?) 
+```{r limnotas}
+nts[which(nts$MParcial>37 & nts$MParcial<40), ]
+nts[which(nts$MParcial>67 & nts$MParcial<70), ]
+```
+
+
+Box-plot por resultado parcial em cada turma 
+
+```{r boxplot}
+library(ggplot2)
+ggplot(nts, aes(x=turma, y=MParcial)) +
+    geom_boxplot() + facet_wrap(~RParcial)
+```
+
+Correlacao das 3 provas e resultado parcial. 
+Media por prova e turma. 
+
+```{r descritivas}
+jp <- c(5, 9, 14)
+round(cor(nts[, c(jp, 15)]), 2)
+round(sapply(nts[, c(jp, 15)], tapply, nts$turma, mean), 2)
+```
+
+Box-plot das sabatinas por turma 
+
+```{r sabatinas}
+js <- setdiff(2:14, jp)
+sdat <- data.frame(turma=rep(nts$turma, length(js)),
+                   cap=rep(colnames(nts)[js], nrow(nts)),
+                   nota=unlist(nts[, js])) 
+ggplot(sdat, aes(x=cap, y=nota)) +
+    geom_boxplot() + facet_wrap(~turma) 
+```
+
+Box-plot das provas por turma 
+
+```{r provas}
+pdat <- data.frame(turma=rep(nts$turma, length(jp)),
+                   prova=rep(colnames(nts)[jp], nrow(nts)),
+                   nota=unlist(nts[, jp])) 
+ggplot(pdat, aes(x=prova, y=nota)) +
+    geom_boxplot() + facet_wrap(~turma) 
+```
