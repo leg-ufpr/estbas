@@ -31,7 +31,7 @@ rpf <- function(x)
 ### Eng. Amb. (AMB) & Eng. Ind. Mad. (MD)
 
 ```{r engamb, echo=FALSE}
-nt <- read.csv('misc/ambMad.csv')
+nt <- read.csv2('misc/ambMad.csv')
 nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
@@ -49,7 +49,7 @@ kable(nt, row.names = FALSE)
 ### Agronomia
 
 ```{r agronomia, echo=FALSE}
-nt <- read.csv('misc/agro.csv')
+nt <- read.csv2('misc/agro.csv')
 nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpfagro))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
@@ -58,7 +58,7 @@ kable(nt, row.names = FALSE)
 ### Madeireira Noturno
 
 ```{r madeireira, echo=FALSE}
-nt <- read.csv('misc/madNot.csv')
+nt <- read.csv2('misc/madNot.csv')
 nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
