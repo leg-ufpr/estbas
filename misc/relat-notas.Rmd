@@ -25,9 +25,9 @@ rpf <- function(x)
   ifelse(x>69, 'Aprovado', 'Final'))
 ```
 
-## Relatorio de notas 
+## Relatorio de notas
 
-Turmas de estatistica basica semestre 1 de 2019 
+Turmas de estatistica basica semestre 1 de 2019
 
 ```{r preparadados, echo=FALSE, results='hide'}
 fls <- c('ambMad', 'bio', 'agro', 'madNot')
@@ -42,19 +42,19 @@ nts <- Reduce('rbind', lapply(fls, function(x) {
     } else {
         nt$MParcial <- apply(nt[-(1)], 1, mpf)
     }
-    return(data.frame(nt, turma=x)) 
+    return(data.frame(nt, turma=x))
 }))
 nts$RParcial <- rpf(nts$MParcial)
 ```
 
-### O que fazer com os seguintes casos: (olhar provas?) 
+### O que fazer com os seguintes casos: (olhar provas?)
 ```{r limnotas}
 nts[which(nts$MParcial>37 & nts$MParcial<40), ]
 nts[which(nts$MParcial>67 & nts$MParcial<70), ]
 ```
 
 
-Box-plot por resultado parcial em cada turma 
+Box-plot por resultado parcial em cada turma
 
 ```{r boxplot}
 library(ggplot2)
@@ -62,8 +62,8 @@ ggplot(nts, aes(x=turma, y=MParcial)) +
     geom_boxplot() + facet_wrap(~RParcial)
 ```
 
-Correlacao das 3 provas e resultado parcial. 
-Media por prova e turma. 
+Correlacao das 3 provas e resultado parcial.
+Media por prova e turma.
 
 ```{r descritivas}
 jp <- c(5, 9, 14)
@@ -71,23 +71,23 @@ round(cor(nts[, c(jp, 15)]), 2)
 round(sapply(nts[, c(jp, 15)], tapply, nts$turma, mean), 2)
 ```
 
-Box-plot das sabatinas por turma 
+Box-plot das sabatinas por turma
 
 ```{r sabatinas}
 js <- setdiff(2:14, jp)
 sdat <- data.frame(turma=rep(nts$turma, length(js)),
                    cap=rep(colnames(nts)[js], nrow(nts)),
-                   nota=unlist(nts[, js])) 
+                   nota=unlist(nts[, js]))
 ggplot(sdat, aes(x=cap, y=nota)) +
-    geom_boxplot() + facet_wrap(~turma) 
+    geom_boxplot() + facet_wrap(~turma)
 ```
 
-Box-plot das provas por turma 
+Box-plot das provas por turma
 
 ```{r provas}
 pdat <- data.frame(turma=rep(nts$turma, length(jp)),
                    prova=rep(colnames(nts)[jp], nrow(nts)),
-                   nota=unlist(nts[, jp])) 
+                   nota=unlist(nts[, jp]))
 ggplot(pdat, aes(x=prova, y=nota)) +
-    geom_boxplot() + facet_wrap(~turma) 
+    geom_boxplot() + facet_wrap(~turma)
 ```
