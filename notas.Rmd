@@ -63,5 +63,3 @@ nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
-
-
