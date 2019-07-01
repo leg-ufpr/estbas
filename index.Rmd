@@ -14,12 +14,8 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **Para todas as turmas**: haverá teste extra no Moodle que ficará
-  aberto terça e quarta. O conteúdo é o mesmo da avaliação 3.
-- **SEGUNDA CHAMADA:** a segunda chamada das provas será realizada no
-dia 26/06 (quarta-feira). Para mais informações acesse essa
-[página](segunda.html) (somente os alunos listados ali poderão fazer a
-segunda chamada).
+- **ATENÇÃO:** a média final de todos foi revisada. Confira novamente
+  sua nota!
 - **EXAMES:** os exames serão realizados nas seguintes datas (as salas
   são as mesmas):
   - **02/07 (terça-feira)**
