@@ -23,7 +23,11 @@ mpfagro <- function(x) {
 
 rpf <- function(x)
   ifelse(x<39, 'Reprovado',
-         ifelse(x>69, 'Aprovado', 'Final'))
+  ifelse(x>69, 'Aprovado', 'Final'))
+
+sobe <- function(x){
+    ifelse(x >= 66 & x <= 69, 70, x)
+}
 ```
 
 ## Escolha a aba de sua turma {.tabset}
@@ -32,7 +36,8 @@ rpf <- function(x)
 
 ```{r engamb, echo=FALSE}
 nt <- read.csv2('misc/ambMad.csv')
-nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
+nt$MediaParcial <- ceiling(apply(as.matrix(nt[-1]), 1, mpf))
+nt$MediaParcial <- sobe(nt$MediaParcial)
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
@@ -41,7 +46,8 @@ kable(nt, row.names = FALSE)
 
 ```{r biologia, echo=FALSE}
 nt <- read.csv2('misc/bio.csv')
-nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
+nt$MediaParcial <- ceiling(apply(as.matrix(nt[-1]), 1, mpf))
+nt$MediaParcial <- sobe(nt$MediaParcial)
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
@@ -50,7 +56,8 @@ kable(nt, row.names = FALSE)
 
 ```{r agronomia, echo=FALSE}
 nt <- read.csv2('misc/agro.csv')
-nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpfagro))
+nt$MediaParcial <- ceiling(apply(as.matrix(nt[-1]), 1, mpfagro))
+nt$MediaParcial <- sobe(nt$MediaParcial)
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
@@ -59,7 +66,8 @@ kable(nt, row.names = FALSE)
 
 ```{r madeireira, echo=FALSE}
 nt <- read.csv2('misc/madNot.csv')
-nt$MediaParcial <- round(apply(as.matrix(nt[-1]), 1, mpf))
+nt$MediaParcial <- ceiling(apply(as.matrix(nt[-1]), 1, mpf))
+nt$MediaParcial <- sobe(nt$MediaParcial)
 nt$ResultParcial <- rpf(nt$MediaParcial)
 kable(nt, row.names = FALSE)
 ```
