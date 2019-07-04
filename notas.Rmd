@@ -28,6 +28,9 @@ sobe <- function(x){
 }
 rf <- function(x)
     ifelse(x<49, 'Reprovado', 'Aprovado')
+sobe2 <- function(x){
+    ifelse(x >= 48 & x <= 49, 50, x)
+}
 ```
 
 ## Escolha a aba de sua turma {.tabset}
@@ -39,6 +42,20 @@ nt <- read.csv2('misc/ambMad.csv')
 nt$MediaParcial <- ceiling(apply(as.matrix(nt[-1]), 1, mpf))
 nt$MediaParcial <- sobe(nt$MediaParcial)
 nt$ResultParcial <- rpf(nt$MediaParcial)
+## Verifica se alguem que nao deveria fazer fez o exame
+## nt$Exame[nt$ResultParcial != "Final" & !is.na(nt$Exame)]
+## Aqui foi permitido, mas coloca NA porque nao adiantou
+## nt$Exame[nt$ResultParcial != "Final" & !is.na(nt$Exame)] <- NA
+## Quem deveria fazer o exame mas nao fez recebe zero
+nt$Exame[nt$ResultParcial == "Final" & is.na(nt$Exame)] <- 0
+## Calcula media final
+nt$MediaFinal <- ceiling((nt$MediaParcial + (nt$Exame * 10))/2)
+nt$MediaFinal <- sobe2(nt$MediaFinal)
+nt$MediaFinal[nt$ResultParcial != "Final"] <-
+    nt$MediaParcial[nt$ResultParcial != "Final"]
+nt$ResultFinal <- rf(nt$MediaFinal)
+## Arruma ordem das colunas
+nt <- nt[, c(1:14, 16:17, 15, 18:19)]
 kable(nt, row.names = FALSE)
 ```
 
@@ -77,6 +94,7 @@ nt$Exame[nt$ResultParcial != "Final" & !is.na(nt$Exame)] <- NA
 nt$Exame[nt$ResultParcial == "Final" & is.na(nt$Exame)] <- 0
 ## Calcula media final
 nt$MediaFinal <- ceiling((nt$MediaParcial + (nt$Exame * 10))/2)
+nt$MediaFinal <- sobe2(nt$MediaFinal)
 nt$MediaFinal[nt$ResultParcial != "Final"] <-
     nt$MediaParcial[nt$ResultParcial != "Final"]
 nt$ResultFinal <- rf(nt$MediaFinal)
