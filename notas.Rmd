@@ -20,14 +20,14 @@ mpfagro <- function(x) {
     p <- mean(x[c(4, 8, 12)])
     return(l*4 + p*6)
 }
-
 rpf <- function(x)
   ifelse(x<39, 'Reprovado',
   ifelse(x>69, 'Aprovado', 'Final'))
-
 sobe <- function(x){
     ifelse(x >= 66 & x <= 69, 70, x)
 }
+rf <- function(x)
+    ifelse(x<49, 'Reprovado', 'Aprovado')
 ```
 
 ## Escolha a aba de sua turma {.tabset}
@@ -69,5 +69,18 @@ nt <- read.csv2('misc/madNot.csv')
 nt$MediaParcial <- ceiling(apply(as.matrix(nt[-1]), 1, mpf))
 nt$MediaParcial <- sobe(nt$MediaParcial)
 nt$ResultParcial <- rpf(nt$MediaParcial)
+## Verifica se alguem que nao deveria fazer fez o exame
+## nt$Exame[nt$ResultParcial != "Final" & !is.na(nt$Exame)]
+## Aqui foi permitido, mas coloca NA porque nao adiantou
+nt$Exame[nt$ResultParcial != "Final" & !is.na(nt$Exame)] <- NA
+## Quem deveria fazer o exame mas nao fez recebe zero
+nt$Exame[nt$ResultParcial == "Final" & is.na(nt$Exame)] <- 0
+## Calcula media final
+nt$MediaFinal <- ceiling((nt$MediaParcial + (nt$Exame * 10))/2)
+nt$MediaFinal[nt$ResultParcial != "Final"] <-
+    nt$MediaParcial[nt$ResultParcial != "Final"]
+nt$ResultFinal <- rf(nt$MediaFinal)
+## Arruma ordem das colunas
+nt <- nt[, c(1:14, 16:17, 15, 18:19)]
 kable(nt, row.names = FALSE)
 ```
