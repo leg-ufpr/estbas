@@ -59,6 +59,18 @@ nt <- nt[, c(1:14, 16:17, 15, 18:19)]
 kable(nt, row.names = FALSE)
 ```
 
+```{r, include=FALSE, eval=FALSE}
+fl <- ""
+fl.res <- "~/amb.csv"
+nomes <- readODS::read_ods(fl)[, c("Matrícula", "Nome")]
+str(nomes)
+nt2 <- nt[, c("Matrícula", "MediaFinal")]
+str(nt2)
+res <- merge(nomes, nt2)
+res <- res[order(res$Nome), ]
+write.csv(res, fl.res, row.names = FALSE)
+```
+
 ### Biologia
 
 ```{r biologia, echo=FALSE}
@@ -81,6 +93,18 @@ nt$ResultFinal <- rf(nt$MediaFinal)
 ## Arruma ordem das colunas
 nt <- nt[, c(1:14, 16:17, 15, 18:19)]
 kable(nt, row.names = FALSE)
+```
+
+```{r, include=FALSE, eval=FALSE}
+fl <- ""
+fl.res <- "~/bio.csv"
+nomes <- readODS::read_ods(fl)[, c("Matrícula", "Nome")]
+str(nomes)
+nt2 <- nt[, c("Matrícula", "MediaFinal")]
+str(nt2)
+res <- merge(nomes, nt2)
+res <- res[order(res$Nome), ]
+write.csv(res, fl.res, row.names = FALSE)
 ```
 
 ### Agronomia
@@ -107,6 +131,18 @@ nt <- nt[, c(1:13, 15:16, 14, 17:18)]
 kable(nt, row.names = FALSE)
 ```
 
+```{r, include=FALSE, eval=FALSE}
+fl <- ""
+fl.res <- "~/agro.csv"
+nomes <- readODS::read_ods(fl)[, c("Matrícula", "Nome")]
+str(nomes)
+nt2 <- nt[, c("Matrícula", "MediaFinal")]
+str(nt2)
+res <- merge(nomes, nt2)
+res <- res[order(res$Nome), ]
+write.csv(res, fl.res, row.names = FALSE)
+```
+
 ### Madeireira Noturno
 
 ```{r madeireira, echo=FALSE}
@@ -129,4 +165,16 @@ nt$ResultFinal <- rf(nt$MediaFinal)
 ## Arruma ordem das colunas
 nt <- nt[, c(1:14, 16:17, 15, 18:19)]
 kable(nt, row.names = FALSE)
+```
+
+```{r, include=FALSE, eval=FALSE}
+fl <- ""
+fl.res <- "~/mad.csv"
+nomes <- readODS::read_ods(fl)[, c("Matrícula", "Nome")]
+str(nomes)
+nt2 <- nt[, c("Matrícula", "MediaFinal")]
+str(nt2)
+res <- merge(nomes, nt2)
+res <- res[order(res$Nome), ]
+write.csv(res, fl.res, row.names = FALSE)
 ```
