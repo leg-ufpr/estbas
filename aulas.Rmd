@@ -14,224 +14,53 @@ sofrer alterações).
 
 ## Escolha a aba de sua turma {.tabset}
 
-### C. Biológicas (MB)
+	### Quimica (Noite) (N2P)
 
 ```{r, eval=FALSE, include=FALSE}
 ## Gera a lista com as datas de todas as aulas. O resultado do último
 ## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-20"), as.Date("2019-06-19"),
+datas1 <- seq.Date(as.Date("2019-08-06"), as.Date("2019-12-01"),
                       by = "week")
 datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
-           datas2, " (Sex)", "**:\n"))
-```
-
-- **PARTE I**
-- **20/02 (Qua)**: Apresentação da disciplina.
-- **22/02 (Sex)**: (1) Introdução à análise exploratória de dados.
-- **27/02 (Qua)**: Exercícios.
-- **01/03 (Sex)**: Sabatina 1.
-- **06/03 (Qua)**: **Feriado**.
-- **08/03 (Sex)**: (2) Probabilidades.
-- **13/03 (Qua)**: Exercícios.
-- **15/03 (Sex)**: Sabatina 2.
-- **20/03 (Qua)**: (3) Variáveis aleatórias discretas.
-- **22/03 (Sex)**: Exercícios.
-- **27/03 (Qua)**: Sabatina 3.
-- **29/03 (Sex)**: **Prova 1**.
-- **PARTE II**
-- **03/04 (Qua)**: (4) Medidas resumo.
-- **05/04 (Sex)**: Exercícios.
-- **10/04 (Qua)**: Sabatina 4.
-- **12/04 (Sex)**: (5) Variáveis bidimensionais.
-- **17/04 (Qua)**: Exercícios.
-- **19/04 (Sex)**: **Feriado**.
-- **24/04 (Qua)**: Sabatina 5.
-- **26/04 (Sex)**: (6) Variáveis aleatórias contínuas.
-- **01/05 (Qua)**: **Feriado**.
-- **03/05 (Sex)**: Exercícios.
-- **08/05 (Qua)**: Sabatina 6.
-- **10/05 (Sex)**: **Prova 2**.
-- **PARTE III**
-- **15/05 (Qua)**: (7) Inferência estatística - estimação.
-- **17/05 (Sex)**: Exercícios.
-- **22/05 (Qua)**: Sabatina 7.
-- **24/05 (Sex)**: (8) Inferência estatística - testes de hipótese. **ATENÇÃO MUDANÇA DE SALA NESTE DIA**
-- **29/05 (Qua)**: Exercícios.
-- **31/05 (Sex)**: Sabatina 8.
-- **05/06 (Qua)**: (9) Tópicos especiais.
-- **07/06 (Sex)**: Exercícios.
-- **12/06 (Qua)**: Sabatina 9.
-- **14/06 (Sex)**: Revisão.
-- **19/06 (Qua)**: **Prova 3**.
-- **21/06 (Sex)**: **Feriado**.
-
-### Eng. Amb. (AMB) & Eng. Ind. Mad. (MD)
-
-```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-21"), as.Date("2019-06-20"),
+datas2 <- seq.Date(as.Date("2019-08-09"), as.Date("2019-12-04"),
                       by = "week")
 datas2 <- format.Date(datas2, format = "%d/%m")
 cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
-           datas2, " (Qui)", "**:\n"))
-```
-
-- **PARTE I**
-- **19/02 (Ter)**: Apresentação da disciplina.
-- **21/02 (Qui)**: (1) Introdução à análise exploratória de dados.
-- **26/02 (Ter)**: Exercícios.
-- **28/02 (Qui)**: Sabatina 1.
-- **05/03 (Ter)**: **Feriado**.
-- **07/03 (Qui)**: (2) Probabilidades.
-- **12/03 (Ter)**: Exercícios.
-- **14/03 (Qui)**: Sabatina 2.
-- **19/03 (Ter)**: (3) Variáveis aleatórias discretas.
-- **21/03 (Qui)**: Exercícios.
-- **26/03 (Ter)**: Sabatina 3.
-- **28/03 (Qui)**: **Prova 1**.
-- **PARTE II**
-- **02/04 (Ter)**: (4) Medidas resumo.
-- **04/04 (Qui)**: Exercícios.
-- **09/04 (Ter)**: Sabatina 4.
-- **11/04 (Qui)**: ~~(5) Variáveis bidimensionais.~~
-- **16/04 (Ter)**: (5) Variáveis bidimensionais.
-- **18/04 (Qui)**: Exercícios.
-- **23/04 (Ter)**: Sabatina 5.
-- **25/04 (Qui)**: (6) Variáveis aleatórias contínuas.
-- **30/04 (Ter)**: Exercícios.
-- **02/05 (Qui)**: Sabatina 6.
-- **07/05 (Ter)**: Revisão.
-- **09/05 (Qui)**: **Prova 2**.
-- **PARTE III**
-- **14/05 (Ter)**: (7) Inferência estatística - estimação.
-- **16/05 (Qui)**: Exercícios.
-- **21/05 (Ter)**: Sabatina 7.
-- **23/05 (Qui)**: (8) Inferência estatística - testes de hipótese.
-- **28/05 (Ter)**: Exercícios.
-- **30/05 (Qui)**: Sabatina 8.
-- **04/06 (Ter)**: (9) Tópicos especiais.
-- **06/06 (Qui)**: Exercícios.
-- **11/06 (Ter)**: Sabatina 9.
-- **13/06 (Qui)**: Revisão.
-- **18/06 (Ter)**: **Prova 3**.
-- **20/06 (Qui)**: **Feriado**.
-
-### Eng. Mad. (N)
-
-```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-20"), as.Date("2019-06-19"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
            datas2, " (Sex)", "**:\n"))
 ```
-
 - **PARTE I**
-- **20/02 (Qua)**: Apresentação da disciplina.
-- **22/02 (Sex)**: (1) Introdução à análise exploratória de dados.
-- **27/02 (Qua)**: Exercícios.
-- **01/03 (Sex)**: Sabatina 1.
-- **06/03 (Qua)**: **Feriado**.
-- **08/03 (Sex)**: (2) Probabilidades.
-- **13/03 (Qua)**: Exercícios.
-- **15/03 (Sex)**: Sabatina 2.
-- **20/03 (Qua)**: (3) Variáveis aleatórias discretas.
-- **22/03 (Sex)**: Exercícios.
-- **27/03 (Qua)**: Sabatina 3.
-- **29/03 (Sex)**: **Prova 1**.
-- **PARTE II**
-- **03/04 (Qua)**: (4) Medidas resumo.
-- **05/04 (Sex)**: Exercícios.
-- **10/04 (Qua)**: Sabatina 4.
-- **12/04 (Sex)**: (5) Variáveis bidimensionais.
-- **17/04 (Qua)**: Exercícios.
-- **19/04 (Sex)**: **Feriado**.
-- **24/04 (Qua)**: Sabatina 5.
-- **26/04 (Sex)**: (6) Variáveis aleatórias contínuas.
-- **01/05 (Qua)**: **Feriado**.
-- **03/05 (Sex)**: Exercícios.
-- **08/05 (Qua)**: Sabatina 6.
-- **10/05 (Sex)**: **Prova 2**.
-- **PARTE III**
-- **15/05 (Qua)**: (7) Inferência estatística - estimação.
-- **17/05 (Sex)**: Exercícios.
-- **22/05 (Qua)**: Sabatina 7.
-- **24/05 (Sex)**: (8) Inferência estatística - testes de hipótese.
-- **29/05 (Qua)**: Exercícios.
-- **31/05 (Sex)**: Sabatina 8.
-- **05/06 (Qua)**: (9) Tópicos especiais.
-- **07/06 (Sex)**: Exercícios.
-- **12/06 (Qua)**: Sabatina 9.
-- **14/06 (Sex)**: Revisão.
-- **19/06 (Qua)**: **Prova 3**.
-- **21/06 (Sex)**: **Feriado**.
+- **06/08 (Ter)**: Apresentação da disciplina
+- **09/08 (Sex)**: 1. Análise exploratória de dados [Slides1](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf) 
+ - **13/08 (Ter)**: Exercícios
+- **16/08 (Sex)**: 
+ - **20/08 (Ter)**: 
+- **23/08 (Sex)**: 
+ - **27/08 (Ter)**:
+- **30/08 (Sex)**:
+ - **03/09 (Ter)**:
+- **06/09 (Sex)**:
+ - **10/09 (Ter)**:
+- **13/09 (Sex)**:
+ - **17/09 (Ter)**:
+- **20/09 (Sex)**:
+ - **24/09 (Ter)**:
+- **27/09 (Sex)**:
+ - **01/10 (Ter)**:
+- **04/10 (Sex)**:
+ - **08/10 (Ter)**:
+- **11/10 (Sex)**:
+ - **15/10 (Ter)**:
+- **18/10 (Sex)**:
+ - **22/10 (Ter)**:
+- **25/10 (Sex)**:
+ - **29/10 (Ter)**:
+- **01/11 (Sex)**:
+ - **05/11 (Ter)**:
+- **08/11 (Sex)**:
+ - **12/11 (Ter)**:
+- **15/11 (Sex)**:
+ - **19/11 (Ter)**:
+- **22/11 (Sex)**:
+ - **26/11 (Ter)**:
+- **29/11 (Sex)**:
 
-### Agronomia (A)
-
-```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-20"), as.Date("2019-06-19"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
-           datas2, " (Sex)", "**:\n"))
-```
-
-- **PARTE I**
-- **20/02 (Qua)**: ~~Apresentação da disciplina.~~ Semana acadêmica.
-- **22/02 (Sex)**: ~~(1) Introdução à análise exploratória de dados.~~
-  Semana acadêmica.
-- **27/02 (Qua)**: Apresentação da disciplina.
-- **01/03 (Sex)**: (1) Introdução à análise exploratória de dados.
-- **06/03 (Qua)**: Exercícios.
-- **08/03 (Sex)**: Sabatina 1.
-- **13/03 (Qua)**: **Feriado**.
-- **15/03 (Sex)**: (2) Probabilidades.
-- **20/03 (Qua)**: Exercícios.
-- **22/03 (Sex)**: Sabatina 2.
-- **27/03 (Qua)**: (3) Variáveis aleatórias discretas.
-- **29/03 (Sex)**: Exercícios.
-- **03/04 (Qua)**: Sabatina 3.
-- **05/04 (Sex)**: ~~**Prova 1**.~~
-- **10/04 (Qua)**: **Prova 1**.
-- **PARTE II**
-- **12/04 (Sex)**: (4) Medidas resumo.
-- **17/04 (Qua)**: Exercícios.
-- **19/04 (Sex)**: **Feriado**.
-- **24/04 (Qua)**: Sabatina 4.
-- **26/04 (Sex)**: (5) Variáveis bidimensionais.
-- **01/05 (Qua)**: **Feriado**.
-- **03/05 (Sex)**: Exercícios.
-- **08/05 (Qua)**: Sabatina 5.
-- **10/05 (Sex)**: ~~(6) Variáveis aleatórias contínuas~~. Semana
-  acadêmica.
-- **15/05 (Qua)**: (6) Variáveis aleatórias contínuas.
-- **17/05 (Sex)**: Exercícios.
-- **22/05 (Qua)**: Sabatina 6.
-- **24/05 (Sex)**: **Prova 2**
-- **PARTE III**
-- **29/05 (Qua)**: (7) Inferência estatística - estimação.
-- **31/05 (Sex)**: Exercícios.
-- **05/06 (Qua)**: Sabatina 7.
-- **07/06 (Sex)**: (8) Inferência estatística - testes de hipótese.
-- **12/06 (Qua)**: Exercícios.
-- **14/06 (Sex)**: Sabatina 8.
-- **19/06 (Qua)**: **Prova 3**.
-- **21/06 (Sex)**: **Feriado**.

@@ -9,86 +9,47 @@ output:
 source("setup_knitr.R")
 ```
 
-[![Build Status](https://travis-ci.org/leg-ufpr/estbas.svg?branch=master)](https://travis-ci.org/leg-ufpr/estbas)
-
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **ATENÇÃO:** a média final de todos foi revisada. Confira novamente
-  sua nota!
-- **EXAMES:** os exames serão realizados nas seguintes datas (as salas
-  são as mesmas):
-  - **02/07 (terça-feira)**
-    - **13:30** Engenharia Ambiental (AMB) e Eng. Ind. Madeireira (MD)
-  - **03/07 (quarta-feira)**
-    - **07:30** Ciências Biológicas (MB)
-    - **15:30** Agronomia (A)
-    - **20:30** Eng. Ind. Madeireira (MN)
+- **SALA** de aula de terças-feiras alterada para RD07
+
 </div>
 
 # Disciplinas
 
 Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 
-- **CE001 - Bioestatística**
-  - Ciências Biológicas (MB)
-- **CE003 - Estatística II**
-  - Engenharia Industrial Madeireira (MD)
-  - Engenharia Madeireira (N)
 - **CE009 - Introdução à Estatística**
-  - Engenharia Ambiental (AMB)
-  - Agronomia (A)
+  - E104A - QUÍMICA LIC NOT (N2P)
 
 # Detalhes da oferta da disciplina
 
 - **Período:** primeiro semestre de 2019
 - **Professores Responsáveis:**
   - [Elias Teixeira Krainski][], [LEG][]/DEST/UFPR
-  - [Fernando de Pol Mayer][], [LEG][]/DEST/UFPR
-  - [Wagner Hugo Bonat][], [LEG][]/DEST/UFPR
+<!--[Fernando de Pol Mayer]: http://leg.ufpr.br/~fernandomayer
+[Wagner Hugo Bonat]: http://leg.ufpr.br/~wbonat 
+-->
 - **Horários e Locais:**
-  - Ciências Biológicas (MB):
-    - Quarta, 07:30 - 09:30h, DEST Multimídia
-    - Sexta, 07:30 - 09:30h, DEST Multimídia
-  - Engenharia Industrial Madeireira (MD) e Engenharia Ambiental (AMB):
-    - Terça, 13:30 - 15:30h, DEST Multimídia
-    - Quinta, 13:30 - 15:30h, DEST Multimídia
-  - Engenharia Madeireira (MN):
-    - Quarta, 20:30 - 22:30, PC-16
-    - Sexta, 20:30 - 22:30h, PC-16
-  - Agronomia (A):
-    - Quarta, 15:30 - 17:30, PH-11
-    - Sexta, 15:30 - 17:30h, PH-11
-- **Horários de atendimento dos professores:**
-    - Terças e quintas, 16:00-20:00 (preferenciais). Outros horários
+    - Terça, 19:00 - 21:00, PQ-13
+    - Sexta, 21:00 - 23:00h, RD-07
+- **Horários de atendimento do professor:**
+    - Terças 18:00-19:00 (preferencial). Outros horários
       podem ser agendados previamente por email.
 - **Frequência**: de acordo com as normas da Universidade, mínimo de 75%
 - **Avaliações**:
-  - **(40%)** Sabatinas semanais
-    - As sabatinas são provas menores, com conteúdo específico, e servem
-      de preparação para as provas discursivas.
-    - A média final das sabatinas será a média das 75% maiores notas (as
-    25% menores notas serão descartadas).
-  - **(60%)** Provas discursivas
-    - As provas discursivas serão aplicadas ao final de um módulo da
-      disciplina.
-  - **Média final**: a média final será composta por 40% da média das
-    sabatinas e 60% da média das provas discursivas.
+  - **Provas** 
+    - Três provas
+  - **Média final**: a média final será a média das três provas.
 - **Segunda chamada**:
-  - Somente as provas discursivas poderão ter segunda chamada
-    - Só será realizada segunda chamada para alunos que protocolarem o
-      pedido, devidamente justificado, junto ao Departamento de
-      Estatística.
-    - As provas de segunda chamada só serão realizadas ao final do
-      semestre.
-  - **Importante**: nas sabatinas não há segunda chamada. Ao perder
-  uma sabatina, a nota é 0, e automaticamente estará dentro das 25%
-  menores notas que serão excluídas para o cálculo da média das
-  sabatinas.
+  - Só será realizada segunda chamada para alunos que protocolarem o
+    pedido, devidamente justificado, junto ao Departamento de
+    Estatística.
 - **Datas importantes:** De acordo com a [Resolução 64/18 - CEPE][]:
-    - **18/02**: Início do semestre letivo
-    - **22/06**: Final do semestre letivo
-    - **27/06-03/07**: Período de exames
+    - **05/08**: Início do semestre letivo
+    - **04/12**: Final do semestre letivo
+    - **09 a 14/12**: Período de exames
 
 # Programa/objetivos da disciplina
 
@@ -104,7 +65,8 @@ análises estatística básicas. O curso compreende três grandes tópicos:
 <!-- links -->
 
 [Elias Teixeira Krainski]: http://www.leg.ufpr.br/~elias/
-[Fernando de Pol Mayer]: http://leg.ufpr.br/~fernandomayer
-[Wagner Hugo Bonat]: http://leg.ufpr.br/~wbonat
+<!--[Fernando de Pol Mayer]: http://leg.ufpr.br/~fernandomayer
+[Wagner Hugo Bonat]: http://leg.ufpr.br/~wbonat 
+-->>
 [LEG]: http://www.leg.ufpr.br
 [Resolução 64/18 - CEPE]: http://www.est.ufpr.br/calendario/cepe6418.pdf
