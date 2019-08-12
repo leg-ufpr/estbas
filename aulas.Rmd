@@ -34,7 +34,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 ----------|---------------------------:|-------:|----:|----:|----:|----:|
 | T 06/08 | Apresentação da disciplina |        | 1-5 | 1-9 |13-23|  1-8|
 | S 09/08 | Tabelas e gráficos |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf) | 5-19 | 9-19 | 32-49 | 9-13, 21-32 |
-| T 13/08 | Medidas Resumo   |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf) | 93-109 | 41-53 | | 9-13|
+| T 13/08 | Medidas Resumo   |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf) | 93-109 | 41-53 | | 13-21|
 
 
 - **16/08 (Sex)**: 
