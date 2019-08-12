@@ -12,9 +12,10 @@ source("setup_knitr.R")
 Abaixo está o cronograma inicial planejado para as disciplinas. (Pode
 sofrer alterações).
 
-## Escolha a aba de sua turma {.tabset}
+<!-- ## Escolha a aba de sua turma {.tabset}
+-->
 
-	### Quimica (Noite) (N2P)
+## Quimica (Noite) (N2P)
 
 ```{r, eval=FALSE, include=FALSE}
 ## Gera a lista com as datas de todas as aulas. O resultado do último
@@ -28,10 +29,14 @@ datas2 <- format.Date(datas2, format = "%d/%m")
 cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
            datas2, " (Sex)", "**:\n"))
 ```
-- **PARTE I**
-- **06/08 (Ter)**: Apresentação da disciplina
-- **09/08 (Sex)**: 1. Análise exploratória de dados [Slides1](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf) 
- - **13/08 (Ter)**: Exercícios
+
+| Data    | Conteudo                   | Slides | M&L | B&M | R.A.| DEST|
+----------|---------------------------:|-------:|----:|----:|----:|----:|
+| T 06/08 | Apresentação da disciplina |        |     |     |     |     |
+| S 09/08 | Tabelas e gráficos |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf) | |||||
+| T 13/08 | Medidas Resumo   |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf) | |||||
+
+
 - **16/08 (Sex)**: 
  - **20/08 (Ter)**: 
 - **23/08 (Sex)**: 
