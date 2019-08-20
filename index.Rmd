@@ -12,7 +12,7 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **SALA** de aula de terças-feiras alterada para RD07
+- **SALA** de aula de terças-feiras alterada para PR07
 
 </div>
 
@@ -33,7 +33,7 @@ Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 -->
 - **Horários e Locais:**
     - Terça, 19:00 - 21:00, PQ-13
-    - Sexta, 21:00 - 23:00h, RD-07
+    - Sexta, 21:00 - 23:00, PR-07
 - **Horários de atendimento do professor:**
     - Terças 18:00-19:00 (preferencial). Outros horários
       podem ser agendados previamente por email.
