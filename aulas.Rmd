@@ -37,7 +37,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 | T 13/08 | Nenhum (Paralização) | último slide link acima |||||
 | S 16/08 | Medidas Resumo  | [S](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf) | 93-109 | 41-53 | | 13-21|
 | T 20/08 | Exercicios (sem aula) | [lista1](misc/lista1.pdf) |||||
-| S 23/08 | Entrega **lista1**  e estatatística descritiva bidimensional | [S](http://cursos.leg.ufpr.br/estbas-slides/slides/05_Variaveis_Bidimensionais.pdf) |||||
+| S 23/08 | Entrega **lista1**  e estatatística descritiva bidimensional |  |||||
 | T 27/08 | Revisão ||||||
 | S 30/08 | Entrega **lista2** e **prova1** ||||||
 
