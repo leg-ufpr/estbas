@@ -36,9 +36,8 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 | S 09/08 | Tabelas e gráficos |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf) | 5-19 | 9-19 | 32-49 | 9-13, 21-32 |
 | T 13/08 | Nenhum (Paralização) | Ex. último slide link acima |||||
 | S 16/08 | Medidas Resumo   |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf) | 93-109 | 41-53 | | 13-21|
+| T 20/08 | Exercicios (sem aula)      | [lista1](:misc/lista1.pdf) |||||
 
-
- - **20/08 (Ter)**: 
 - **23/08 (Sex)**: 
  - **27/08 (Ter)**:
 - **30/08 (Sex)**:
