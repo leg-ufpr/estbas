@@ -12,7 +12,7 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **SALA** de aula de terças-feiras alterada para PR07
+- **AULA** terça dia 20/08 (fazer lista indicada no link aulas e entregar sexta). Vale presença e ponto na prova 1. 
 
 </div>
 
@@ -39,9 +39,10 @@ Esta página abrange o conteúdo das seguintes disciplinas e cursos:
       podem ser agendados previamente por email.
 - **Frequência**: de acordo com as normas da Universidade, mínimo de 75%
 - **Avaliações**:
-  - **Provas** 
-    - Três provas
-  - **Média final**: a média final será a média das três provas.
+  - **Três notas** 
+    - **Nota 1**: Lista 1 (**23/08**) + Lista 2 (**30/08**) + prova 1 (**30/08**) 
+  - **Média final**: a média final será a média das três notas.
+
 - **Segunda chamada**:
   - Só será realizada segunda chamada para alunos que protocolarem o
     pedido, devidamente justificado, junto ao Departamento de
