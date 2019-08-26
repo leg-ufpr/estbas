@@ -12,7 +12,8 @@ source("setup_knitr.R")
 <div class="alert alert-danger" role="alert">
 **AVISOS!**
 
-- **AULA** terça dia 20/08 (fazer lista indicada no link aulas e entregar sexta). Vale presença e ponto na prova 1. 
+- **Prova** sexta-feira dia 30/08 
+- entregar **lista2** indicada no link aulas
 
 </div>
 
