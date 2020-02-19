@@ -12,59 +12,215 @@ source("setup_knitr.R")
 Abaixo está o cronograma inicial planejado para as disciplinas. (Pode
 sofrer alterações).
 
-<!-- ## Escolha a aba de sua turma {.tabset}
--->
-
-## Quimica (Noite) (N2P)
+## Escolha a aba de sua turma {.tabset}
 
 ```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-08-06"), as.Date("2019-12-01"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-08-09"), as.Date("2019-12-04"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
-           datas2, " (Sex)", "**:\n"))
+## Funcao para gerar a lista com as datas
+geraData <- function(dini1, dfim1, dia1, dini2, dfim2, dia2) {
+    datas1 <- seq.Date(as.Date(dini1), as.Date(dfim1),
+                       by = "week")
+    datas1 <- format.Date(datas1, format = "%d/%m")
+    datas2 <- seq.Date(as.Date(dini2), as.Date(dfim2),
+                       by = "week")
+    datas2 <- format.Date(datas2, format = "%d/%m")
+    res <- cat(paste0("- **", datas1, " (", dia1, ")", "**:\n", "- **",
+                      datas2, " (", dia2, ")", "**:\n"))
+    return(res)
+}
+
 ```
 
-| Data    | Conteudo                   | Slides | M&L | B&M | R.A.| DEST|
-----------|---------------------------:|-------:|----:|----:|----:|----:|
-| T 06/08 | Apresentação da disciplina |        | 1-5 | 1-9 |13-23|  1-8|
-| S 09/08 | Tabelas e gráficos |[S](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf) | 5-19 | 9-19 | 32-49 | 9-13, 21-32 |
-| T 13/08 | Nenhum (Paralização) | último slide link acima |||||
-| S 16/08 | Medidas Resumo  | [S](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf) | 93-109 | 41-53 | | 13-21|
-| T 20/08 | Exercicios (sem aula) | [lista1](misc/lista1.pdf) |||||
-| S 23/08 | Entrega **lista1**  e Análise Estatatística descritiva bidimensional |  ||80-86|||
-| T 27/08 | Revisão | [lista2](misc/lista2.pdf) |||||
-| S 30/08 | Entrega **lista2** e **prova1** ||||||
+### Eng. Bioproc. e Mat. Ind.
 
- - **03/09 (Ter)**:
-- **06/09 (Sex)**:
- - **10/09 (Ter)**:
-- **13/09 (Sex)**:
- - **17/09 (Ter)**:
-- **20/09 (Sex)**:
- - **24/09 (Ter)**:
-- **27/09 (Sex)**:
- - **01/10 (Ter)**:
-- **04/10 (Sex)**:
- - **08/10 (Ter)**:
-- **11/10 (Sex)**:
- - **15/10 (Ter)**:
-- **18/10 (Sex)**:
- - **22/10 (Ter)**:
-- **25/10 (Sex)**:
- - **29/10 (Ter)**:
-- **01/11 (Sex)**:
- - **05/11 (Ter)**:
-- **08/11 (Sex)**:
- - **12/11 (Ter)**:
-- **15/11 (Sex)**:
- - **19/11 (Ter)**:
-- **22/11 (Sex)**:
- - **26/11 (Ter)**:
-- **29/11 (Sex)**:
+```{r, eval=FALSE, include=FALSE}
+geraData(dini1 = "2020-03-02", dfim1 = "2020-06-22", dia1 = "Seg",
+         dini2 = "2020-03-04", dfim2 = "2020-06-24", dia2 = "Qua")
+```
 
+#### PARTE I
+- **02/03 (Seg)**: Apresentação da disciplina.
+- **04/03 (Qua)**: (1) Introdução à análise exploratória de dados.
+- **09/03 (Seg)**: Exercícios.
+- **11/03 (Qua)**: Sabatina 1.
+- **16/03 (Seg)**: (2) Probabilidades.
+- **18/03 (Qua)**: Exercícios.
+- **23/03 (Seg)**: Sabatina 2.
+- **25/03 (Qua)**: (3) Variáveis aleatórias discretas.
+- **30/03 (Seg)**: Exercícios.
+- **01/04 (Qua)**: Sabatina 3.
+- **06/04 (Seg)**: **Prova 1**.
+
+#### PARTE II
+- **08/04 (Qua)**: (4) Medidas resumo.
+- **13/04 (Seg)**: Exercícios.
+- **15/04 (Qua)**: Sabatina 4.
+- **20/04 (Seg)**: **Recesso**.
+- **22/04 (Qua)**: (5) Variáveis bidimensionais.
+- **27/04 (Seg)**: Exercícios.
+- **29/04 (Qua)**: Sabatina 5.
+- **04/05 (Seg)**: (6) Variáveis aleatórias contínuas.
+- **06/05 (Qua)**: Exercícios.
+- **11/05 (Seg)**: Sabatina 6.
+- **13/05 (Qua)**: **Prova 2**.
+
+#### PARTE III
+- **18/05 (Seg)**: (7a) Inferência estatística: propriedades e
+  distribuições amostrais.
+- **20/05 (Qua)**: Exercícios. <!-- RBRAS -->
+- **25/05 (Seg)**: (7b) Inferência estatística: estimação por intervalo.
+- **27/05 (Qua)**: Exercícios.
+- **01/06 (Seg)**: Sabatina 7.
+- **03/06 (Qua)**: (8) Inferência estatística: testes de hipótese.
+- **08/06 (Seg)**: Exercícios.
+- **10/06 (Qua)**: Sabatina 8.
+- **15/06 (Seg)**: (9) Tópicos especiais: regressão linear.
+- **17/06 (Qua)**: Exercícios.
+- **22/06 (Seg)**: Sabatina 9.
+- **24/06 (Qua)**: **Prova 3**.
+
+
+### Eng. Amb. e Eng. Ind. Mad.
+
+```{r, eval=FALSE, include=FALSE}
+geraData(dini1 = "2020-03-03", dfim1 = "2020-06-23", dia1 = "Ter",
+         dini2 = "2020-03-05", dfim2 = "2020-06-25", dia2 = "Qui")
+```
+
+#### PARTE I
+- **03/03 (Ter)**: Apresentação da disciplina.
+- **05/03 (Qui)**: (1) Introdução à análise exploratória de dados.
+- **10/03 (Ter)**: Exercícios.
+- **12/03 (Qui)**: Sabatina 1.
+- **17/03 (Ter)**: (2) Probabilidades.
+- **19/03 (Qui)**: Exercícios.
+- **24/03 (Ter)**: Sabatina 2.
+- **26/03 (Qui)**: (3) Variáveis aleatórias discretas.
+- **31/03 (Ter)**: Exercícios.
+- **02/04 (Qui)**: Sabatina 3.
+- **07/04 (Ter)**: **Prova 1**.
+
+#### PARTE II
+- **09/04 (Qui)**: (4) Medidas resumo.
+- **14/04 (Ter)**: Exercícios.
+- **16/04 (Qui)**: Sabatina 4.
+- **21/04 (Ter)**: **Feriado**.
+- **23/04 (Qui)**: (5) Variáveis bidimensionais.
+- **28/04 (Ter)**: Exercícios.
+- **30/04 (Qui)**: Sabatina 5.
+- **05/05 (Ter)**: (6) Variáveis aleatórias contínuas.
+- **07/05 (Qui)**: Exercícios.
+- **12/05 (Ter)**: Sabatina 6.
+- **14/05 (Qui)**: **Prova 2**.
+
+#### PARTE III
+- **19/05 (Ter)**:  (7a) Inferência estatística: propriedades e
+  distribuições amostrais.
+- **21/05 (Qui)**:  (7b) Inferência estatística: estimação por
+  intervalo. <!-- RBRAS -->
+- **26/05 (Ter)**: Exercícios.
+- **28/05 (Qui)**: Sabatina 7.
+- **02/06 (Ter)**: (8) Inferência estatística: testes de hipótese.
+- **04/06 (Qui)**: Exercícios.
+- **09/06 (Ter)**: Sabatina 8.
+- **11/06 (Qui)**: **Feriado**.
+- **16/06 (Ter)**: (9) Tópicos especiais: regressão linear.
+- **18/06 (Qui)**: Exercícios.
+- **23/06 (Ter)**: Sabatina 9.
+- **25/06 (Qui)**: **Prova 3**.
+
+### Eng. Civil
+
+```{r, eval=FALSE, include=FALSE}
+geraData(dini1 = "2020-03-03", dfim1 = "2020-06-23", dia1 = "Ter",
+         dini2 = "2020-03-05", dfim2 = "2020-06-25", dia2 = "Qui")
+```
+
+#### PARTE I
+- **03/03 (Ter)**: Apresentação da disciplina.
+- **05/03 (Qui)**: (1) Introdução à análise exploratória de dados.
+- **10/03 (Ter)**: Exercícios.
+- **12/03 (Qui)**: Sabatina 1.
+- **17/03 (Ter)**: (2) Probabilidades.
+- **19/03 (Qui)**: Exercícios.
+- **24/03 (Ter)**: Sabatina 2.
+- **26/03 (Qui)**: (3) Variáveis aleatórias discretas.
+- **31/03 (Ter)**: Exercícios.
+- **02/04 (Qui)**: Sabatina 3.
+- **07/04 (Ter)**: **Prova 1**.
+
+#### PARTE II
+- **09/04 (Qui)**: (4) Medidas resumo.
+- **14/04 (Ter)**: Exercícios.
+- **16/04 (Qui)**: Sabatina 4.
+- **21/04 (Ter)**: **Feriado**.
+- **23/04 (Qui)**: (5) Variáveis bidimensionais.
+- **28/04 (Ter)**: Exercícios.
+- **30/04 (Qui)**: Sabatina 5.
+- **05/05 (Ter)**: (6) Variáveis aleatórias contínuas.
+- **07/05 (Qui)**: Exercícios.
+- **12/05 (Ter)**: Sabatina 6.
+- **14/05 (Qui)**: **Prova 2**.
+
+#### PARTE III
+- **19/05 (Ter)**:  (7a) Inferência estatística: propriedades e
+  distribuições amostrais.
+- **21/05 (Qui)**:  (7b) Inferência estatística: estimação por
+  intervalo. <!-- RBRAS -->
+- **26/05 (Ter)**: Exercícios.
+- **28/05 (Qui)**: Sabatina 7.
+- **02/06 (Ter)**: (8) Inferência estatística: testes de hipótese.
+- **04/06 (Qui)**: Exercícios.
+- **09/06 (Ter)**: Sabatina 8.
+- **11/06 (Qui)**: **Feriado**.
+- **16/06 (Ter)**: (9) Tópicos especiais: regressão linear.
+- **18/06 (Qui)**: Exercícios.
+- **23/06 (Ter)**: Sabatina 9.
+- **25/06 (Qui)**: **Prova 3**.
+
+### Agronomia
+
+```{r, eval=FALSE, include=FALSE}
+geraData(dini1 = "2020-03-04", dfim1 = "2020-06-24", dia1 = "Qua",
+         dini2 = "2020-03-06", dfim2 = "2020-06-26", dia2 = "Sex")
+```
+
+#### PARTE I
+- **04/03 (Qua)**: **Semana do calouro**.
+- **06/03 (Sex)**: **Semana do calouro**.
+- **11/03 (Qua)**: Apresentação da disciplina.
+- **13/03 (Sex)**: (1) Introdução à análise exploratória de dados.
+- **18/03 (Qua)**: Exercícios.
+- **20/03 (Sex)**: Sabatina 1.
+- **25/03 (Qua)**: (2) Probabilidades.
+- **27/03 (Sex)**: Exercícios.
+- **01/04 (Qua)**: Sabatina 2.
+- **03/04 (Sex)**: (3) Variáveis aleatórias discretas.
+- **08/04 (Qua)**: Exercícios.
+- **10/04 (Sex)**: **Feriado**.
+- **15/04 (Qua)**: Sabatina 3.
+- **17/04 (Sex)**: **Prova 1**.
+
+#### PARTE II
+- **22/04 (Qua)**: (4) Medidas resumo.
+- **24/04 (Sex)**: Exercícios.
+- **29/04 (Qua)**: Sabatina 4.
+- **01/05 (Sex)**: **Feriado**.
+- **06/05 (Qua)**: (5) Variáveis bidimensionais.
+- **08/05 (Sex)**: Exercícios.
+- **13/05 (Qua)**: **Semana acadêmica**.
+- **15/05 (Sex)**: **Semana acadêmica**.
+- **20/05 (Qua)**: Sabatina 5.
+- **22/05 (Sex)**: (6) Variáveis aleatórias contínuas. <!-- RBRAS -->
+- **27/05 (Qua)**: Exercícios.
+- **29/05 (Sex)**: Sabatina 6.
+- **03/06 (Qua)**: **Prova 2**.
+
+#### PARTE III
+- **05/06 (Sex)**: (7) Inferência estatística: distribuição amostral e
+  estimação por intervalo.
+- **10/06 (Qua)**: Exercícios.
+- **12/06 (Sex)**: **Recesso**.
+- **17/06 (Qua)**: (8) Inferência estatística: testes de hipótese.
+- **19/06 (Sex)**: Exercícios.
+- **24/06 (Qua)**: Sabatina 7.
+- **26/06 (Sex)**: **Prova 3**.
