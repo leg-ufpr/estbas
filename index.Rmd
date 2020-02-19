@@ -9,49 +9,70 @@ output:
 source("setup_knitr.R")
 ```
 
-<div class="alert alert-danger" role="alert">
-**AVISOS!**
-
-- **Prova** sexta-feira dia 30/08 
-- entregar **lista2** indicada no link aulas
-
-</div>
+<!-- <div class="alert alert-danger" role="alert"> -->
+<!-- </div> -->
 
 # Disciplinas
 
 Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 
+- **CE003 - Estatística II**
+  - Engenharia Civil (C)
+  - Engenharia Industrial Madeireira (D3p)
+  - Engengaria de Bioprocessos (F)
+  - Matemática Industrial (MI)
 - **CE009 - Introdução à Estatística**
-  - E104A - QUÍMICA LIC NOT (N2P)
+  - Engenharia Ambiental (AMB)
+  - Agronomia (A)
 
 # Detalhes da oferta da disciplina
 
-- **Período:** primeiro semestre de 2019
+- **Período:** primeiro semestre de 2020
 - **Professores Responsáveis:**
-  - [Elias Teixeira Krainski][], [LEG][]/DEST/UFPR
-<!--[Fernando de Pol Mayer]: http://leg.ufpr.br/~fernandomayer
-[Wagner Hugo Bonat]: http://leg.ufpr.br/~wbonat 
--->
+  - [Fernando de Pol Mayer][], [LEG][]/DEST/UFPR
+  - [Wagner Hugo Bonat][], [LEG][]/DEST/UFPR
+  - [Walmes Marques Zeviani][], [LEG][]/DEST/UFPR
 - **Horários e Locais:**
-    - Terça, 19:00 - 21:00, PQ-13
-    - Sexta, 21:00 - 23:00, PR-07
-- **Horários de atendimento do professor:**
-    - Terças 18:00-19:00 (preferencial). Outros horários
+  - Engenharia de Bioprocessos (F) e Matemática Industrial (MI):
+    - Segunda, 13:30 - 15:30h, PF-07
+    - Quarta, 13:30 - 15:30h, CT-01
+  - Engenharia Ambiental (AMB) e Engenharia Industrial Madeireira (D3p):
+    - Terça, 13:30 - 15:30h, CT-07
+    - Quinta, 13:30 - 15:30h, CT-01
+  - Engenharia Civil (C):
+    - Terça, 15:30 - 17:30h, PC-03
+    - Quinta, 15:30 - 17:30h, CT-02
+  - Agronomia (A):
+    - Quarta, 15:30 - 17:30h, CT-04
+    - Sexta, 15:30 - 17:30h, CT-09
+- **Horários de atendimento dos professores:**
+    - Segundas 15:30 - 19:00 (preferencial). Outros horários
       podem ser agendados previamente por email.
+- **Horários dos monitores:**
+  - Em breve será divulgado.
 - **Frequência**: de acordo com as normas da Universidade, mínimo de 75%
 - **Avaliações**:
-  - **Três notas** 
-    - **Nota 1**: Lista 1 (**23/08**) + Lista 2 (**30/08**) + prova 1 (**30/08**) 
-  - **Média final**: a média final será a média das três notas.
-
+  - **(40%)** Sabatinas semanais
+    - As sabatinas são provas menores, com conteúdo específico, e servem
+      de preparação para as provas discursivas.
+    - A média final das sabatinas será a média das 75% maiores notas (as
+    25% menores notas serão descartadas).
+  - **(60%)** Provas discursivas
+    - As provas discursivas serão aplicadas ao final de um módulo da
+      disciplina.
+  - **Média final**: a média final será composta por 40% da média das
+    sabatinas e 60% da média das provas discursivas.
 - **Segunda chamada**:
-  - Só será realizada segunda chamada para alunos que protocolarem o
-    pedido, devidamente justificado, junto ao Departamento de
-    Estatística.
-- **Datas importantes:** De acordo com a [Resolução 64/18 - CEPE][]:
-    - **05/08**: Início do semestre letivo
-    - **04/12**: Final do semestre letivo
-    - **09 a 14/12**: Período de exames
+  - Somente as provas discursivas poderão ter segunda chamada
+    - Só será realizada segunda chamada para alunos que protocolarem o
+      pedido, devidamente justificado, junto ao Departamento de
+      Estatística.
+    - As provas de segunda chamada só serão realizadas ao final do
+      semestre.
+- **Datas importantes:** De acordo com a [Resolução 24/19 - CEPE][]:
+    - **02/03**: Início do semestre letivo
+    - **27/06**: Final do semestre letivo
+    - **06/07-11/07**: Período de exames
 
 # Programa/objetivos da disciplina
 
@@ -66,9 +87,8 @@ análises estatística básicas. O curso compreende três grandes tópicos:
 
 <!-- links -->
 
-[Elias Teixeira Krainski]: http://www.leg.ufpr.br/~elias/
-<!--[Fernando de Pol Mayer]: http://leg.ufpr.br/~fernandomayer
-[Wagner Hugo Bonat]: http://leg.ufpr.br/~wbonat 
--->>
+[Fernando de Pol Mayer]: http://leg.ufpr.br/~fernandomayer
+[Wagner Hugo Bonat]: http://leg.ufpr.br/~wbonat
+[Walmes Marques Zeviani]: http://leg.ufpr.br/~walmes
 [LEG]: http://www.leg.ufpr.br
-[Resolução 64/18 - CEPE]: http://www.est.ufpr.br/calendario/cepe6418.pdf
+[Resolução 24/19 - CEPE]: http://www.soc.ufpr.br/portal/wp-content/uploads/2019/11/cepe-24.19.pdf
