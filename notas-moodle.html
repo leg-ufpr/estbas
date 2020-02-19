@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -330,6 +329,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -424,9 +424,9 @@ $(document).ready(function () {
 </div>
 
 
-<div id="como-sao-calculadas-as-notas-no-moodle" class="section level2 tabset">
+<div id="como-são-calculadas-as-notas-no-moodle" class="section level2 tabset">
 <h2>Como são calculadas as notas no Moodle</h2>
-<div id="versao-simplificada" class="section level3">
+<div id="versão-simplificada" class="section level3">
 <h3>Versão simplificada</h3>
 <p>As questões de múltipla escolha feitas no Moodle possuem um método de atribuição de pontos que segue algumas regras, demonstradas a seguir.</p>
 <p>A primeira coisa a saber é que o valor de cada alternativa muda conforme o número de alternativas veradeiras/falsas. Cada alternativa verdadeira terá pontuação sempre dada por <span class="math display">\[
@@ -509,9 +509,9 @@ V     0
   5 1.0</code></pre>
 </div>
 </div>
-<div id="detalhes-tecnicos" class="section level2">
+<div id="detalhes-técnicos" class="section level2">
 <h2>Detalhes técnicos</h2>
-<div id="atribuicao-de-notas-do-pacote-exams" class="section level3">
+<div id="atribuição-de-notas-do-pacote-exams" class="section level3">
 <h3>Atribuição de notas do pacote exams</h3>
 <p>A correção automática de questões do pacote <strong>exams</strong> segue uma das cinco regras implementadas na função <code>exams_eval()</code>, que possui os seguintes argumentos</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">library</span>(exams)</a>
@@ -526,7 +526,7 @@ V     0
 <li><code>rule</code>: as cinco regras implementadas (detalhes abaixo).</li>
 </ul>
 </div>
-<div id="regras-de-pontuacao" class="section level3">
+<div id="regras-de-pontuação" class="section level3">
 <h3>Regras de pontuação</h3>
 <p>Em questões de múltipla escolha com créditos parciais, a fração atribuída para cada alternativa verdadeira selecionada será sempre <span class="math inline">\(1/\text{V}\)</span>, onde <span class="math inline">\(\text{V}\)</span> é o número de alternativas corretas (verdadeiras). Quando uma alternativa errada (falsa) é selecionada, a pontuação (negativa) atribuída varia conforme uma das cinco regras. Para cada alternativa errada selecionada, a pontuação negativa atribuída será:</p>
 <ul>
@@ -583,7 +583,7 @@ V     0
 <a class="sourceLine" id="cb8-18" title="18"> <span class="fl">0.2</span> <span class="op">-</span><span class="ot">Inf</span> </a></code></pre></div>
 <p>O que ocorre é que <code>false2</code> considera que no mínimo sempre haverão duas alternativas erradas, para que a pontuação máxima a ser descontada não seja maior do que <span class="math inline">\(0.5\)</span> e a questão não seja anulada.</p>
 </div>
-<div id="calculo-das-notas" class="section level3">
+<div id="cálculo-das-notas" class="section level3">
 <h3>Cálculo das notas</h3>
 <p>A nota final de uma questão será portanto dependente de dois fatores:</p>
 <ol style="list-style-type: decimal">
