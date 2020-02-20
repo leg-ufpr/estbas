@@ -23,25 +23,24 @@ Os slides são baseados no livro:
 
 Tabelas:
 
-- [Formulario de estatística](http://cursos.leg.ufpr.br/estbas/formularioEST.pdf) 
-
-- [Tabelas estatísticas](http://cursos.leg.ufpr.br/estbas/tabelasEST.pdf) 
+- [Formulario de estatística](http://cursos.leg.ufpr.br/estbas/formularioEST.pdf)
+- [Tabelas estatísticas](http://cursos.leg.ufpr.br/estbas/tabelasEST.pdf)
 
 ## Arquivos
 
 1. [Introdução à Análise Exploratória de dados](http://cursos.leg.ufpr.br/estbas-slides/slides/01_Analise_Exploratoria.pdf)
-2. [Probabilidades](http://cursos.leg.ufpr.br/estbas-slides/slides//02_Probabilidades.pdf)
-3. [Variáveis Aleatórias Discretas](http://cursos.leg.ufpr.br/estbas-slides/slides//03_Variaveis_Discretas.pdf)
-4. [Medidas Resumo](http://cursos.leg.ufpr.br/estbas-slides/slides//04_Medidas_Resumo.pdf)
-5. [Variáveis Bidimensionais](http://cursos.leg.ufpr.br/estbas-slides/slides//05_Variaveis_Bidimensionais.pdf)
-6. [Variáveis Aleatórias Contínuas](http://cursos.leg.ufpr.br/estbas-slides/slides//06_Variaveis_Continuas.pdf)
+2. [Probabilidades](http://cursos.leg.ufpr.br/estbas-slides/slides/02_Probabilidades.pdf)
+3. [Variáveis Aleatórias Discretas](http://cursos.leg.ufpr.br/estbas-slides/slides/03_Variaveis_Discretas.pdf)
+4. [Medidas Resumo](http://cursos.leg.ufpr.br/estbas-slides/slides/04_Medidas_Resumo.pdf)
+5. [Variáveis Bidimensionais](http://cursos.leg.ufpr.br/estbas-slides/slides/05_Variaveis_Bidimensionais.pdf)
+6. [Variáveis Aleatórias Contínuas](http://cursos.leg.ufpr.br/estbas-slides/slides/06_Variaveis_Continuas.pdf)
 7. Inferência Estatística
     a. [Propriedades de estimadores e distribuições
-    amostrais](http://cursos.leg.ufpr.br/estbas-slides/slides//07a_Estimacao.pdf)
-    b. [Estimação por intervalo](http://cursos.leg.ufpr.br/estbas-slides/slides//07b_Estimacao.pdf)
+    amostrais](http://cursos.leg.ufpr.br/estbas-slides/slides/07a_Estimacao.pdf)
+    b. [Estimação por intervalo](http://cursos.leg.ufpr.br/estbas-slides/slides/07b_Estimacao.pdf)
 8. Inferência Estatística - [Testes de
-   Hipóteses](http://cursos.leg.ufpr.br/estbas-slides/slides//08_Teste_Hipotese.pdf)
-9. [Regressão Linear Simples](http://cursos.leg.ufpr.br/estbas-slides/slides//09_Regressao.pdf)
+   Hipóteses](http://cursos.leg.ufpr.br/estbas-slides/slides/08_Teste_Hipotese.pdf)
+9. [Regressão Linear Simples](http://cursos.leg.ufpr.br/estbas-slides/slides/09_Regressao.pdf)
 
 
 [Elias Teixeira Krainski]: http://www.leg.ufpr.br/~elias/
