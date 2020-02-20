@@ -187,38 +187,39 @@ geraData(dini1 = "2020-03-04", dfim1 = "2020-06-24", dia1 = "Qua",
 #### PARTE I
 - **04/03 (Qua)**: **Semana do calouro**.
 - **06/03 (Sex)**: **Semana do calouro**.
-- **11/03 (Qua)**: Apresentação da disciplina.
-- **13/03 (Sex)**: (1) Introdução à análise exploratória de dados.
-- **18/03 (Qua)**: Exercícios.
-- **20/03 (Sex)**: Sabatina 1.
-- **25/03 (Qua)**: (2) Probabilidades.
-- **27/03 (Sex)**: Exercícios.
-- **01/04 (Qua)**: Sabatina 2.
-- **03/04 (Sex)**: (3) Variáveis aleatórias discretas.
-- **08/04 (Qua)**: Exercícios.
+- **11/03 (Qua)**: Apresentação da disciplina. (1) Introdução à análise
+  exploratória de dados.
+- **13/03 (Sex)**: Exercícios.
+- **18/03 (Qua)**: Sabatina 1.
+- **20/03 (Sex)**: (2) Probabilidades.
+- **25/03 (Qua)**: Exercícios.
+- **27/03 (Sex)**: Sabatina 2.
+- **01/04 (Qua)**: (3) Variáveis aleatórias discretas.
+- **03/04 (Sex)**: Exercícios.
+- **08/04 (Qua)**: Sabatina 3.
 - **10/04 (Sex)**: **Feriado**.
-- **15/04 (Qua)**: Sabatina 3.
-- **17/04 (Sex)**: **Prova 1**.
+- **15/04 (Qua)**: **Prova 1**.
 
 #### PARTE II
-- **22/04 (Qua)**: (4) Medidas resumo.
-- **24/04 (Sex)**: Exercícios.
-- **29/04 (Qua)**: Sabatina 4.
+- **17/04 (Sex)**: (4) Medidas resumo.
+- **22/04 (Qua)**: Exercícios.
+- **24/04 (Sex)**: Sabatina 4.
+- **29/04 (Qua)**: (5) Variáveis bidimensionais.
 - **01/05 (Sex)**: **Feriado**.
-- **06/05 (Qua)**: (5) Variáveis bidimensionais.
-- **08/05 (Sex)**: Exercícios.
+- **06/05 (Qua)**: Exercícios.
+- **08/05 (Sex)**: Sabatina 5.
 - **13/05 (Qua)**: **Semana acadêmica**.
 - **15/05 (Sex)**: **Semana acadêmica**.
-- **20/05 (Qua)**: Sabatina 5.
-- **22/05 (Sex)**: (6) Variáveis aleatórias contínuas. <!-- RBRAS -->
-- **27/05 (Qua)**: Exercícios.
-- **29/05 (Sex)**: Sabatina 6.
-- **03/06 (Qua)**: **Prova 2**.
+- **20/05 (Qua)**: (6) Variáveis aleatórias contínuas.
+- **22/05 (Sex)**: Exercícios. <!-- RBRAS -->
+- **27/05 (Qua)**: Sabatina 6.
+- **29/05 (Sex)**: **Prova 2**.
 
 #### PARTE III
-- **05/06 (Sex)**: (7) Inferência estatística: distribuição amostral e
+- **03/06 (Qua)**: (7) Inferência estatística: distribuição amostral e
   estimação por intervalo.
-- **10/06 (Qua)**: Exercícios.
+- **05/06 (Sex)**: Exercícios.
+- **10/06 (Qua)**: Sabatina 7.
 - **12/06 (Sex)**: **Recesso**.
 - **17/06 (Qua)**: (8) Inferência estatística: testes de hipótese.
 - **19/06 (Sex)**: Exercícios.
