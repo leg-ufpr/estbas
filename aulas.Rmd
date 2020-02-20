@@ -39,43 +39,43 @@ geraData(dini1 = "2020-03-02", dfim1 = "2020-06-22", dia1 = "Seg",
 
 #### PARTE I
 - **02/03 (Seg)**: Apresentação da disciplina.
-- **04/03 (Qua)**: (1) Introdução à análise exploratória de dados.
-- **09/03 (Seg)**: Exercícios.
-- **11/03 (Qua)**: Sabatina 1.
-- **16/03 (Seg)**: (2) Probabilidades.
-- **18/03 (Qua)**: Exercícios.
-- **23/03 (Seg)**: Sabatina 2.
-- **25/03 (Qua)**: (3) Variáveis aleatórias discretas.
-- **30/03 (Seg)**: Exercícios.
-- **01/04 (Qua)**: Sabatina 3.
-- **06/04 (Seg)**: **Prova 1**.
+- **04/03 (Qua)**: Não haverá aula.
+- **09/03 (Seg)**: (1) Introdução à análise exploratória de dados.
+- **11/03 (Qua)**: Exercícios.
+- **16/03 (Seg)**: Sabatina 1.
+- **18/03 (Qua)**: (2) Probabilidades.
+- **23/03 (Seg)**: Exercícios.
+- **25/03 (Qua)**: Sabatina 2.
+- **30/03 (Seg)**: (3) Variáveis aleatórias discretas.
+- **01/04 (Qua)**: Exercícios.
+- **06/04 (Seg)**: Sabatina 3.
+- **08/04 (Qua)**: **Prova 1**.
 
 #### PARTE II
-- **08/04 (Qua)**: (4) Medidas resumo.
-- **13/04 (Seg)**: Exercícios.
-- **15/04 (Qua)**: Sabatina 4.
+- **13/04 (Seg)**: (4) Medidas resumo.
+- **15/04 (Qua)**: Exercícios.
 - **20/04 (Seg)**: **Recesso**.
-- **22/04 (Qua)**: (5) Variáveis bidimensionais.
-- **27/04 (Seg)**: Exercícios.
-- **29/04 (Qua)**: Sabatina 5.
-- **04/05 (Seg)**: (6) Variáveis aleatórias contínuas.
-- **06/05 (Qua)**: Exercícios.
-- **11/05 (Seg)**: Sabatina 6.
-- **13/05 (Qua)**: **Prova 2**.
+- **22/04 (Qua)**: Sabatina 4.
+- **27/04 (Seg)**: (5) Variáveis bidimensionais.
+- **29/04 (Qua)**: Exercícios.
+- **04/05 (Seg)**: Sabatina 5.
+- **06/05 (Qua)**: (6) Variáveis aleatórias contínuas.
+- **11/05 (Seg)**: Exercícios.
+- **13/05 (Qua)**: Sabatina 6.
+- **18/05 (Seg)**: **Prova 2**.
 
 #### PARTE III
-- **18/05 (Seg)**: (7a) Inferência estatística: propriedades e
-  distribuições amostrais.
-- **20/05 (Qua)**: Exercícios. <!-- RBRAS -->
-- **25/05 (Seg)**: (7b) Inferência estatística: estimação por intervalo.
-- **27/05 (Qua)**: Exercícios.
-- **01/06 (Seg)**: Sabatina 7.
-- **03/06 (Qua)**: (8) Inferência estatística: testes de hipótese.
-- **08/06 (Seg)**: Exercícios.
-- **10/06 (Qua)**: Sabatina 8.
+- **20/05 (Qua)**: (7a) Inferência estatística: propriedades e
+  distribuições amostrais. <!-- RBRAS -->
+- **25/05 (Seg)**: Exercícios.
+- **27/05 (Qua)**: (7b) Inferência estatística: estimação por intervalo.
+- **01/06 (Seg)**: Exercícios.
+- **03/06 (Qua)**: Sabatina 7.
+- **08/06 (Seg)**: (8) Inferência estatística: testes de hipótese.
+- **10/06 (Qua)**: Exercícios.
 - **15/06 (Seg)**: (9) Tópicos especiais: regressão linear.
 - **17/06 (Qua)**: Exercícios.
-- **22/06 (Seg)**: Sabatina 9.
+- **22/06 (Seg)**: Sabatina 8.
 - **24/06 (Qua)**: **Prova 3**.
 
 
