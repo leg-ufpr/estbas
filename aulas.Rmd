@@ -88,44 +88,44 @@ geraData(dini1 = "2020-03-03", dfim1 = "2020-06-23", dia1 = "Ter",
 
 #### PARTE I
 - **03/03 (Ter)**: Apresentação da disciplina.
-- **05/03 (Qui)**: (1) Introdução à análise exploratória de dados.
-- **10/03 (Ter)**: Exercícios.
-- **12/03 (Qui)**: Sabatina 1.
-- **17/03 (Ter)**: (2) Probabilidades.
-- **19/03 (Qui)**: Exercícios.
-- **24/03 (Ter)**: Sabatina 2.
-- **26/03 (Qui)**: (3) Variáveis aleatórias discretas.
-- **31/03 (Ter)**: Exercícios.
-- **02/04 (Qui)**: Sabatina 3.
-- **07/04 (Ter)**: **Prova 1**.
+- **05/03 (Qui)**: Não haverá aula.
+- **10/03 (Ter)**: (1) Introdução à análise exploratória de dados.
+- **12/03 (Qui)**: Exercícios.
+- **17/03 (Ter)**: Sabatina 1.
+- **19/03 (Qui)**: (2) Probabilidades.
+- **24/03 (Ter)**: Exercícios.
+- **26/03 (Qui)**: Sabatina 2.
+- **31/03 (Ter)**: (3) Variáveis aleatórias discretas.
+- **02/04 (Qui)**: Exercícios.
+- **07/04 (Ter)**: Sabatina 3.
+- **09/04 (Qui)**: **Prova 1**.
 
 #### PARTE II
-- **09/04 (Qui)**: (4) Medidas resumo.
-- **14/04 (Ter)**: Exercícios.
-- **16/04 (Qui)**: Sabatina 4.
+- **14/04 (Ter)**: (4) Medidas resumo.
+- **16/04 (Qui)**: Exercícios.
 - **21/04 (Ter)**: **Feriado**.
-- **23/04 (Qui)**: (5) Variáveis bidimensionais.
-- **28/04 (Ter)**: Exercícios.
-- **30/04 (Qui)**: Sabatina 5.
-- **05/05 (Ter)**: (6) Variáveis aleatórias contínuas.
-- **07/05 (Qui)**: Exercícios.
-- **12/05 (Ter)**: Sabatina 6.
-- **14/05 (Qui)**: **Prova 2**.
+- **23/04 (Qui)**: Sabatina 4.
+- **28/04 (Ter)**: (5) Variáveis bidimensionais.
+- **30/04 (Qui)**: Exercícios.
+- **05/05 (Ter)**: Sabatina 5.
+- **07/05 (Qui)**: (6) Variáveis aleatórias contínuas.
+- **12/05 (Ter)**: Exercícios.
+- **14/05 (Qui)**: Sabatina 6.
+- **19/05 (Ter)**: **Prova 2**.
 
 #### PARTE III
-- **19/05 (Ter)**:  (7a) Inferência estatística: propriedades e
-  distribuições amostrais.
-- **21/05 (Qui)**:  (7b) Inferência estatística: estimação por
-  intervalo. <!-- RBRAS -->
-- **26/05 (Ter)**: Exercícios.
-- **28/05 (Qui)**: Sabatina 7.
-- **02/06 (Ter)**: (8) Inferência estatística: testes de hipótese.
-- **04/06 (Qui)**: Exercícios.
-- **09/06 (Ter)**: Sabatina 8.
+- **21/05 (Qui)**: (7a) Inferência estatística: propriedades e
+  distribuições amostrais. <!-- RBRAS -->
+- **26/05 (Ter)**: (7b) Inferência estatística: estimação por
+  intervalo.
+- **28/05 (Qui)**: Exercícios.
+- **02/06 (Ter)**: Sabatina 7.
+- **04/06 (Qui)**: (8) Inferência estatística: testes de hipótese.
+- **09/06 (Ter)**: Exercícios.
 - **11/06 (Qui)**: **Feriado**.
 - **16/06 (Ter)**: (9) Tópicos especiais: regressão linear.
 - **18/06 (Qui)**: Exercícios.
-- **23/06 (Ter)**: Sabatina 9.
+- **23/06 (Ter)**: Sabatina 8.
 - **25/06 (Qui)**: **Prova 3**.
 
 ### Eng. Civil
@@ -137,44 +137,44 @@ geraData(dini1 = "2020-03-03", dfim1 = "2020-06-23", dia1 = "Ter",
 
 #### PARTE I
 - **03/03 (Ter)**: Apresentação da disciplina.
-- **05/03 (Qui)**: (1) Introdução à análise exploratória de dados.
-- **10/03 (Ter)**: Exercícios.
-- **12/03 (Qui)**: Sabatina 1.
-- **17/03 (Ter)**: (2) Probabilidades.
-- **19/03 (Qui)**: Exercícios.
-- **24/03 (Ter)**: Sabatina 2.
-- **26/03 (Qui)**: (3) Variáveis aleatórias discretas.
-- **31/03 (Ter)**: Exercícios.
-- **02/04 (Qui)**: Sabatina 3.
-- **07/04 (Ter)**: **Prova 1**.
+- **05/03 (Qui)**: Não haverá aula.
+- **10/03 (Ter)**: (1) Introdução à análise exploratória de dados.
+- **12/03 (Qui)**: Exercícios.
+- **17/03 (Ter)**: Sabatina 1.
+- **19/03 (Qui)**: (2) Probabilidades.
+- **24/03 (Ter)**: Exercícios.
+- **26/03 (Qui)**: Sabatina 2.
+- **31/03 (Ter)**: (3) Variáveis aleatórias discretas.
+- **02/04 (Qui)**: Exercícios.
+- **07/04 (Ter)**: Sabatina 3.
+- **09/04 (Qui)**: **Prova 1**.
 
 #### PARTE II
-- **09/04 (Qui)**: (4) Medidas resumo.
-- **14/04 (Ter)**: Exercícios.
-- **16/04 (Qui)**: Sabatina 4.
+- **14/04 (Ter)**: (4) Medidas resumo.
+- **16/04 (Qui)**: Exercícios.
 - **21/04 (Ter)**: **Feriado**.
-- **23/04 (Qui)**: (5) Variáveis bidimensionais.
-- **28/04 (Ter)**: Exercícios.
-- **30/04 (Qui)**: Sabatina 5.
-- **05/05 (Ter)**: (6) Variáveis aleatórias contínuas.
-- **07/05 (Qui)**: Exercícios.
-- **12/05 (Ter)**: Sabatina 6.
-- **14/05 (Qui)**: **Prova 2**.
+- **23/04 (Qui)**: Sabatina 4.
+- **28/04 (Ter)**: (5) Variáveis bidimensionais.
+- **30/04 (Qui)**: Exercícios.
+- **05/05 (Ter)**: Sabatina 5.
+- **07/05 (Qui)**: (6) Variáveis aleatórias contínuas.
+- **12/05 (Ter)**: Exercícios.
+- **14/05 (Qui)**: Sabatina 6.
+- **19/05 (Ter)**: **Prova 2**.
 
 #### PARTE III
-- **19/05 (Ter)**:  (7a) Inferência estatística: propriedades e
-  distribuições amostrais.
-- **21/05 (Qui)**:  (7b) Inferência estatística: estimação por
-  intervalo. <!-- RBRAS -->
-- **26/05 (Ter)**: Exercícios.
-- **28/05 (Qui)**: Sabatina 7.
-- **02/06 (Ter)**: (8) Inferência estatística: testes de hipótese.
-- **04/06 (Qui)**: Exercícios.
-- **09/06 (Ter)**: Sabatina 8.
+- **21/05 (Qui)**: (7a) Inferência estatística: propriedades e
+  distribuições amostrais. <!-- RBRAS -->
+- **26/05 (Ter)**: (7b) Inferência estatística: estimação por
+  intervalo.
+- **28/05 (Qui)**: Exercícios.
+- **02/06 (Ter)**: Sabatina 7.
+- **04/06 (Qui)**: (8) Inferência estatística: testes de hipótese.
+- **09/06 (Ter)**: Exercícios.
 - **11/06 (Qui)**: **Feriado**.
 - **16/06 (Ter)**: (9) Tópicos especiais: regressão linear.
 - **18/06 (Qui)**: Exercícios.
-- **23/06 (Ter)**: Sabatina 9.
+- **23/06 (Ter)**: Sabatina 8.
 - **25/06 (Qui)**: **Prova 3**.
 
 ### Agronomia
