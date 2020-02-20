@@ -23,8 +23,8 @@ Os slides são baseados no livro:
 
 Tabelas:
 
-- [Formulario de estatística](http://cursos.leg.ufpr.br/estbas/formularioEST.pdf)
-- [Tabelas estatísticas](http://cursos.leg.ufpr.br/estbas/tabelasEST.pdf)
+- [Formulario de estatística](misc/formularioEST.pdf)
+- [Tabelas estatísticas](misc/tabelasEST.pdf)
 
 ## Arquivos
 
