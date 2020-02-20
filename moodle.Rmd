@@ -10,3 +10,6 @@ source("setup_knitr.R")
 ```
 
 Páginas do Moodle para cada disciplina.
+
+Para detalhes do cálculo das notas em questões de múltipla escolha no
+Moodle, veja [aqui](notas-moodle.html).
