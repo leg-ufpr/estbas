@@ -1,0 +1,12 @@
+---
+title: "Moodle"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE, cache=FALSE}
+source("setup_knitr.R")
+```
+
+Páginas do Moodle para cada disciplina.

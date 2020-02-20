@@ -3,7 +3,6 @@ title: "Notas"
 output:
   html_document:
     toc: false
-    code_folding: show
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}

@@ -26,10 +26,10 @@ navbar:
       href: referencias.html
     - text: "Programas"
       href: programas.html
+    - text: "Moodle"
+      href: moodle.html
     - text: "Notas"
       href: notas.html
-    - text: "Notas: Moodle"
-      href: notas-moodle.html
     - text: "Materiais"
       href: materiais.html
   right:
