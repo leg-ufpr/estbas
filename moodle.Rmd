@@ -9,7 +9,16 @@ output:
 source("setup_knitr.R")
 ```
 
-Páginas do Moodle para cada disciplina.
+# Página no moodle das turmas
+
+  - [Engenharia de Bioprocessos (F) e Matemática Industrial (MI)](https://moodle.c3sl.ufpr.br/course/view.php?id=293).
+  - [Engenharia Ambiental (AMB) e Engenharia Industrial Madeireira (D3p)](https://moodle.c3sl.ufpr.br/course/view.php?id=292).
+  - [Engenharia Civil (C)](https://moodle.c3sl.ufpr.br/course/view.php?id=290).
+  - [Agronomia (A)](https://moodle.c3sl.ufpr.br/course/view.php?id=291).
+
+Atenção: use o método de autoinscrição para participar do curso. O
+código de autoinscrição é `estatistica`. Após a inscrição, preencha a
+informação de código de matrícula.
 
 Para detalhes do cálculo das notas em questões de múltipla escolha no
 Moodle, veja [aqui](notas-moodle.html).
