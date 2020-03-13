@@ -1,5 +1,5 @@
 ---
-title: "Moodle"
+title: "Instruções para uso do Moodle"
 output:
   html_document:
     toc: false
@@ -9,7 +9,7 @@ output:
 source("setup_knitr.R")
 ```
 
-# Página no moodle das turmas
+## Página no moodle das turmas
 
   - [Engenharia de Bioprocessos (F) e Matemática Industrial (MI)](https://moodle.c3sl.ufpr.br/course/view.php?id=293).
   - [Engenharia Ambiental (AMB) e Engenharia Industrial Madeireira (D3p)](https://moodle.c3sl.ufpr.br/course/view.php?id=292).
@@ -17,8 +17,49 @@ source("setup_knitr.R")
   - [Agronomia (A)](https://moodle.c3sl.ufpr.br/course/view.php?id=291).
 
 Atenção: use o método de autoinscrição para participar do curso. O
-código de autoinscrição é `estatistica`. Após a inscrição, preencha a
-informação de código de matrícula.
+código de autoinscrição é <code style="color: orange; font-weight: 800;">estatistica</code>.
+Após a inscrição, preencha a informação de código de matrícula.
 
 Para detalhes do cálculo das notas em questões de múltipla escolha no
 Moodle, veja [aqui](notas-moodle.html).
+
+## Intruções para usar o moodle
+
+  1. Criar uma conta no serviço moodle disponível em <https://moodle.c3sl.ufpr.br>.
+  2. Após criar a conta, procure usando a barra de busca pelo seu
+     curso. Por exemplo, busque com "Agronomia". Ao encontrar, faça a
+     autoinscrição usando a o código mencionado na seção acima.
+  3. Após se inscriver no curso, ficarão visíveis as atividades da
+     disciplina.
+
+As imagens abaixo ilustram o uso do aplicativo moodle para celular.
+
+<style type="text/css">
+.tg .tg-cly1{ text-align: center; vertical-align: middle }
+.tg img { width: 90%; margin: 3px; }
+</style>
+
+<table class="tg">
+<tr>
+<td class="tg-cly1">
+<img src="./img/ScreenshotMoodle1.jpg">
+</td>
+<td class="tg-cly1">
+<img src="./img/ScreenshotMoodle2.jpg">
+</td>
+</tr>
+<td class="tg-cly1">
+<img src="./img/ScreenshotMoodle3.jpg">
+</td>
+<td class="tg-cly1">
+<img src="./img/ScreenshotMoodle4.jpg">
+</td>
+<tr>
+</tr>
+<td class="tg-cly1">
+<img src="./img/ScreenshotMoodle5.jpg">
+</td>
+<td class="tg-cly1">
+</td>
+<tr>
+</table>
