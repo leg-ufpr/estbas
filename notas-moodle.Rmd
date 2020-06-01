@@ -1,5 +1,9 @@
 ---
 title: "Notas: Moodle"
+author: "Fernando Mayer (LEG/DEST/UFPR)"
+date: |
+  | 2019-02-08
+  | Última atualização: 2020-06-01
 output:
   html_document:
     toc: false
