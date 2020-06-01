@@ -9,6 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Fernando Mayer (LEG/DEST/UFPR)" />
 
 
 <title>Notas: Moodle</title>
@@ -420,6 +421,9 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Notas: Moodle</h1>
+<h4 class="author">Fernando Mayer (LEG/DEST/UFPR)</h4>
+<h4 class="date"><div class="line-block">2019-02-08<br />
+Última atualização: 2020-06-01</div></h4>
 
 </div>
 
@@ -429,13 +433,16 @@ $(document).ready(function () {
 <div id="versão-simplificada" class="section level3">
 <h3>Versão simplificada</h3>
 <p>As questões de múltipla escolha feitas no Moodle possuem um método de atribuição de pontos que segue algumas regras, demonstradas a seguir.</p>
-<p>A primeira coisa a saber é que o valor de cada alternativa muda conforme o número de alternativas veradeiras/falsas. Cada alternativa verdadeira terá pontuação sempre dada por <span class="math display">\[
+<p>A primeira coisa a saber é que o valor de cada alternativa muda conforme o número de alternativas verdadeiras/falsas. Cada alternativa verdadeira terá pontuação sempre dada por <span class="math display">\[
 \frac{1}{\text{# verdadeiras}}
 \]</span> ou seja, cada alternativa verdadeira será uma fração do número total de alternativas verdadeiras.</p>
 <p>Ao marcar uma alternativa falsa, existirá uma penalização, ou seja, você receberá uma pontuação negativa por ter marcado uma alternativa falsa. Essa pontuação negativa será utilizada para descontar da nota final obtida marcando-se as alternativas verdadeiras. O cálculo da pontuação de cada alternativa falsa marcada é dado por <span class="math display">\[
 \frac{1}{\max\{ \text{# falsas, 2} \}}
 \]</span> A ideia é a mesma da pontuação das alternativas verdadeiras, mas se houverem apenas uma ou nenhuma alternativa falsa na questão, a fração será sempre <span class="math inline">\(1/2\)</span>. Esse detalhe serve para que, no caso de ocorrer apenas uma alternativa falsa, a marcação dessa alternativa não anule toda a questão. Portanto, no caso de ocorrer apenas uma alternativa falsa, a penalização por marcar essa alternativa será <span class="math inline">\(1/2 = 0,5\)</span>, e não <span class="math inline">\(1/1 = 1\)</span> se não houvesse esse detalhe.</p>
 <p>É importante notar que, de acordo com esses critérios, a nota final <strong>poderia</strong> ser negativa. No entanto, <strong>a nota nunca será negativa</strong>, já que existe uma restrição para que seja no mínimo <strong>zero</strong>.</p>
+<div class="alert alert-warning" role="alert">
+<p><strong>Atenção:</strong> esse é o comportamento padrão para a correção de questões de múltipla escolha adotado pelo pacote <strong>exams</strong>. Esse padrão pode ser alterado. Veja mais informações na seção <a href="#detalhes-técnicos">detalhes técnicos</a>.</p>
+</div>
 </div>
 <div id="exemplos" class="section level3">
 <h3>Exemplos</h3>
@@ -470,8 +477,8 @@ $(document).ready(function () {
 </div>
 <div id="tabelas-de-notas" class="section level3">
 <h3>Tabelas de notas</h3>
-<p>Abaixo você pode conferir as pontuações atríbuidas ao marcar um certo número de alternativas verdaeiras e falsas em questões com 1 a 5 alternativas verdadeiras.</p>
-<p>As linhas das tabelas se referem ao número de alternativas verdadeiras marcadas, enquento que as colunas se referem ao número de alternativas falsas marcadas.</p>
+<p>Abaixo você pode conferir as pontuações atribuídas ao marcar um certo número de alternativas verdadeiras e falsas em questões com 1 a 5 alternativas verdadeiras.</p>
+<p>As linhas das tabelas se referem ao número de alternativas verdadeiras marcadas, enquanto que as colunas se referem ao número de alternativas falsas marcadas.</p>
 <p>Questão com 1 alternativa verdadeira e 4 falsas</p>
 <pre><code>   F
 V   0    1   2    3 4
@@ -508,11 +515,10 @@ V     0
   4 0.8
   5 1.0</code></pre>
 </div>
-</div>
-<div id="detalhes-técnicos" class="section level2">
-<h2>Detalhes técnicos</h2>
-<div id="atribuição-de-notas-do-pacote-exams" class="section level3">
-<h3>Atribuição de notas do pacote exams</h3>
+<div id="detalhes-técnicos" class="section level3">
+<h3>Detalhes técnicos</h3>
+<div id="atribuição-de-notas-do-pacote-exams" class="section level4">
+<h4>Atribuição de notas do pacote exams</h4>
 <p>A correção automática de questões do pacote <strong>exams</strong> segue uma das cinco regras implementadas na função <code>exams_eval()</code>, que possui os seguintes argumentos</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">library</span>(exams)</a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="kw">args</span>(exams_eval)</a>
@@ -526,8 +532,8 @@ V     0
 <li><code>rule</code>: as cinco regras implementadas (detalhes abaixo).</li>
 </ul>
 </div>
-<div id="regras-de-pontuação" class="section level3">
-<h3>Regras de pontuação</h3>
+<div id="regras-de-pontuação" class="section level4">
+<h4>Regras de pontuação</h4>
 <p>Em questões de múltipla escolha com créditos parciais, a fração atribuída para cada alternativa verdadeira selecionada será sempre <span class="math inline">\(1/\text{V}\)</span>, onde <span class="math inline">\(\text{V}\)</span> é o número de alternativas corretas (verdadeiras). Quando uma alternativa errada (falsa) é selecionada, a pontuação (negativa) atribuída varia conforme uma das cinco regras. Para cada alternativa errada selecionada, a pontuação negativa atribuída será:</p>
 <ul>
 <li><code>false2</code> (default): <span class="math inline">\(1/\max\{\text{F}, 2\}\)</span>, onde <span class="math inline">\(\text{F}\)</span> é o número de alternativas erradas (falsas).</li>
@@ -583,8 +589,8 @@ V     0
 <a class="sourceLine" id="cb8-18" title="18"> <span class="fl">0.2</span> <span class="op">-</span><span class="ot">Inf</span> </a></code></pre></div>
 <p>O que ocorre é que <code>false2</code> considera que no mínimo sempre haverão duas alternativas erradas, para que a pontuação máxima a ser descontada não seja maior do que <span class="math inline">\(0.5\)</span> e a questão não seja anulada.</p>
 </div>
-<div id="cálculo-das-notas" class="section level3">
-<h3>Cálculo das notas</h3>
+<div id="cálculo-das-notas" class="section level4">
+<h4>Cálculo das notas</h4>
 <p>A nota final de uma questão será portanto dependente de dois fatores:</p>
 <ol style="list-style-type: decimal">
 <li>A regra de pontuação adotada.</li>
@@ -749,6 +755,7 @@ z = x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{\text{F}}
 <a class="sourceLine" id="cb13-75" title="75">  <span class="dv">3</span> <span class="ot">NA</span></a>
 <a class="sourceLine" id="cb13-76" title="76">  <span class="dv">4</span> <span class="ot">NA</span></a>
 <a class="sourceLine" id="cb13-77" title="77">  <span class="dv">5</span> <span class="ot">NA</span></a></code></pre></div>
+</div>
 </div>
 </div>
 
