@@ -46,6 +46,13 @@ penalização por marcar essa alternativa será $1/2 = 0,5$, e não $1/1 =
 **poderia** ser negativa. No entanto, **a nota nunca será negativa**, já
 que existe uma restrição para que seja no mínimo **zero**.
 
+<div class="alert alert-warning" role="alert">
+**Atenção:** esse é o comportamento padrão para a correção de questões
+de múltipla escolha adotado pelo pacote **exams**. Esse padrão pode ser
+alterado. Veja mais informações na seção [detalhes
+técnicos](#detalhes-técnicos).
+</div>
+
 ### Exemplos
 
 Suponha uma questão com 2 alternativas verdadeiras (V) e 3 falsas
@@ -139,10 +146,9 @@ Questão com 5 alternativas verdadeiras e 0 falsas
 makegrid(p = 1, v = 5, rule = "false2")
 ```
 
+### Detalhes técnicos
 
-## Detalhes técnicos
-
-### Atribuição de notas do pacote exams
+#### Atribuição de notas do pacote exams
 
 A correção automática de questões do pacote **exams** segue uma das
 cinco regras implementadas na função `exams_eval()`, que possui os
@@ -160,7 +166,7 @@ onde os argumentos são:
   que pode acontecer de acordo com algumas regras de correção).
 - `rule`: as cinco regras implementadas (detalhes abaixo).
 
-### Regras de pontuação
+#### Regras de pontuação
 
 Em questões de múltipla escolha com créditos parciais, a fração
 atribuída para cada alternativa verdadeira selecionada será sempre
@@ -219,7 +225,7 @@ O que ocorre é que `false2` considera que no mínimo sempre haverão duas
 alternativas erradas, para que a pontuação máxima a ser descontada não
 seja maior do que $0.5$ e a questão não seja anulada.
 
-### Cálculo das notas
+#### Cálculo das notas
 
 A nota final de uma questão será portanto dependente de dois fatores:
 
