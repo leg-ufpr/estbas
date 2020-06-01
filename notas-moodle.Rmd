@@ -18,7 +18,7 @@ As questões de múltipla escolha feitas no Moodle possuem um método de
 atribuição de pontos que segue algumas regras, demonstradas a seguir.
 
 A primeira coisa a saber é que o valor de cada alternativa muda conforme
-o número de alternativas veradeiras/falsas. Cada alternativa verdadeira
+o número de alternativas verdadeiras/falsas. Cada alternativa verdadeira
 terá pontuação sempre dada por
 $$
 \frac{1}{\text{# verdadeiras}}
@@ -87,12 +87,12 @@ Alguns cenários possíveis:
 
 ### Tabelas de notas
 
-Abaixo você pode conferir as pontuações atríbuidas ao marcar um certo
-número de alternativas verdaeiras e falsas em questões com 1 a 5
+Abaixo você pode conferir as pontuações atribuídas ao marcar um certo
+número de alternativas verdadeiras e falsas em questões com 1 a 5
 alternativas verdadeiras.
 
 As linhas das tabelas se referem ao número de alternativas verdadeiras
-marcadas, enquento que as colunas se referem ao número de alternativas
+marcadas, enquanto que as colunas se referem ao número de alternativas
 falsas marcadas.
 
 ```{r, echo=FALSE}
