@@ -6,7 +6,7 @@ date: |
   | Última atualização: 2020-06-01
 output:
   html_document:
-    toc: false
+    toc: true
     code_folding: show
 ---
 
@@ -14,9 +14,9 @@ output:
 source("setup_knitr.R")
 ```
 
-## Como são calculadas as notas no Moodle {.tabset}
+# Como são calculadas as notas no Moodle
 
-### Versão simplificada
+## Versão simplificada
 
 As questões de múltipla escolha feitas no Moodle possuem um método de
 atribuição de pontos que segue algumas regras, demonstradas a seguir.
@@ -57,7 +57,7 @@ alterado. Veja mais informações na seção [detalhes
 técnicos](#detalhes-técnicos).
 </div>
 
-### Exemplos
+## Exemplos
 
 Suponha uma questão com 2 alternativas verdadeiras (V) e 3 falsas
 (F). A pontuação de cada alternativa será:
@@ -89,7 +89,7 @@ Alguns cenários possíveis:
 - Ao marcar 2 V e 1 F, a nota será $0,50 - 0,50 = 0,00$.
 - Ao marcar 1 V e 1 F, a nota será $0,25 - 0,50 = 0,00$.
 
-### Tabelas de notas
+## Tabelas de notas
 
 Abaixo você pode conferir as pontuações atribuídas ao marcar um certo
 número de alternativas verdadeiras e falsas em questões com 1 a 5
@@ -150,9 +150,9 @@ Questão com 5 alternativas verdadeiras e 0 falsas
 makegrid(p = 1, v = 5, rule = "false2")
 ```
 
-### Detalhes técnicos
+## Detalhes técnicos
 
-#### Atribuição de notas do pacote exams
+### Atribuição de notas do pacote exams
 
 A correção automática de questões do pacote **exams** segue uma das
 cinco regras implementadas na função `exams_eval()`, que possui os
@@ -170,7 +170,7 @@ onde os argumentos são:
   que pode acontecer de acordo com algumas regras de correção).
 - `rule`: as cinco regras implementadas (detalhes abaixo).
 
-#### Regras de pontuação
+### Regras de pontuação
 
 Em questões de múltipla escolha com créditos parciais, a fração
 atribuída para cada alternativa verdadeira selecionada será sempre
@@ -229,7 +229,7 @@ O que ocorre é que `false2` considera que no mínimo sempre haverão duas
 alternativas erradas, para que a pontuação máxima a ser descontada não
 seja maior do que $0.5$ e a questão não seja anulada.
 
-#### Cálculo das notas
+### Cálculo das notas
 
 A nota final de uma questão será portanto dependente de dois fatores:
 
